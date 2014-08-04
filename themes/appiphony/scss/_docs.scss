@@ -1,0 +1,35 @@
+pre {
+  margin-bottom: 15px;
+  display: block;
+  background: $bg-2;
+  color: $body-font-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dfdfdf;
+  @include radius-all;
+  .tag, .tag .title {
+    color: #000080;
+    font-weight: normal;
+  }
+  .tag .value, .phpdoc, .tex .formula {
+    color: #d14;
+  }
+  .attribute, .variable, .lisp {
+    color: #008080;
+  }
+  code {
+    color: $body-font-color;
+    display: block;
+    padding: 0.5em;
+    background: #FAFAFA;
+    @include radius-all;
+    .code-container {
+      margin: 10px 0px;
+      padding: 5px;
+      overflow-x: auto;
+      line-height: 1.3rem;
+      font-weight: normal;
+    }
+  }
+}
+

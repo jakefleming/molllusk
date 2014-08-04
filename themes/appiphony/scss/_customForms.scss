@@ -1,0 +1,63 @@
+//checkboxes & radios
+.checkbox, .radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.checkbox--default, .radio--default {
+  border-color: #cfd0d2;
+  @include bsn;
+}
+
+.checkbox--default {
+  @include radius($global-radius / 2);
+}
+
+.radio--default {
+  @include radius(50%);
+}
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  vertical-align:middle;
+  outline: none!important;
+}
+
+.checkbox--states-1:checked, .radio--states-1:checked {
+  background: $primary-color !important;
+  -webkit-box-shadow: 0 1px rgba(0,0,0,.1);
+  box-shadow: 0 1px rgba(0,0,0,.1);
+  border: 1px solid transparent;
+}
+
+.checkbox--states-1:checked::after {
+  display: block;
+  position: relative;
+  content: '';
+  height: 8px;
+  width: 14px;
+  border-bottom: 4px solid white;
+  border-left: 4px solid white;
+  -webkit-transform: translate(4px, 5px) rotate(-45deg);
+}
+
+.radio--states-1:checked::after {
+  display: block;
+  position: relative;
+  content: '';
+  left: 5px;
+  top: 5px;
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background: white;
+}

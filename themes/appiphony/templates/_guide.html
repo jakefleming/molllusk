@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+
+<div class="off-canvas-page toggle-offcanvas">
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="tab-bar">
+
+                <section class="left-small">
+                    <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                </section>
+
+                <section class="middle tab-bar-section">
+                    <h1 class="title">Docs</h1>
+                </section>
+
+            </nav>
+
+            <aside class="left-off-canvas-menu">
+                <ul class="off-canvas-list">
+                    <li><label>Zurb components</label></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li><label>Add ons</label></li>
+                </ul>
+            </aside>
+
+            <section class="main-section">
+                <!-- content goes here -->
+                <div class="row">
+                    <section id="alertBoxes">
+                        <div class="small-12 columns patd">
+                            <h4>Alert Boxes</h4>
+                            <div data-alert="" class="alert-box radius">
+                                This is a standard alert (div.alert-box.radius).
+                                <a href="" class="close">×</a>
+                            </div>
+                            <div data-alert="" class="alert-box radius success">
+                                This is a success alert (div.alert-box.success.radius).
+                                <a href="" class="close">×</a>
+                            </div>
+                            <div data-alert="" class="alert-box radius alert">
+                                This is an error alert (div.alert-box.alert.radius).
+                                <a href="" class="close">×</a>
+                            </div>
+                            <div data-alert="" class="alert-box radius info">
+                                This is an info alert (div.alert-box.alert.radius).
+                                <a href="" class="close">×</a>
+                            </div>
+                            <div data-alert="" class="alert-box radius warning">
+                                This is a warning alert (div.alert-box.alert.radius).
+                                <a href="" class="close">×</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="buttonDropdowns">
+                        <div class="small-12 columns patd">
+                            <h4>Buttons</h4>
+                            <a href="#" class="button radius">
+                                Primary
+                            </a>
+                            <a href="#" class="default button radius">
+                                Default
+                            </a>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;button radius&quot;</span>&gt;</span>Primary Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;default button radius&quot;</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div></code></pre>
+                        </div>
+                    </section>
+                    <section id="buttons">
+                        <div class="small-12 columns">
+                            <h4>Button Dropdowns</h4>
+                            <a href="#" data-dropdown="drop1" class="button radius dropdown">Dropdown Button</a>
+                            <ul id="drop1" data-dropdown-content class="f-dropdown">
+                                <li><a href="#">This is a link</a></li>
+                                <li><a href="#">This is another</a></li>
+                                <li><a href="#">Yet another</a></li>
+                            </ul>
+                            <a href="#" data-dropdown="drop2" class="default button radius dropdown">Dropdown Button</a>
+                            <ul id="drop2" data-dropdown-content class="f-dropdown">
+                                <li><a href="#">This is a link</a></li>
+                                <li><a href="#">This is another</a></li>
+                                <li><a href="#">Yet another</a></li>
+                            </ul>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">data-dropdown</span>=<span class="value">"drop1"</span> <span class="attribute">class</span>=<span class="value">"[default] button radius dropdown"</span>&gt;</span>Dropdown Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"drop1"</span> <span class="attribute">data-dropdown-content</span> <span class="attribute">class</span>=<span class="value">"f-dropdown"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>This is a link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>This is another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Yet another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <a class="exit-off-canvas"></a>
+
+        </div>
+    </div>
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/foundation/js/foundation.min.js"></script>
+<script src="../bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>
