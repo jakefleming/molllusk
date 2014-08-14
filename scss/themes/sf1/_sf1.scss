@@ -134,11 +134,11 @@ h1, h1.subheader{
   }
 }
 h2, h2.subheader {
-  ont-size: 2.5000rem; /* 40px */
+  font-size: 2.5000rem; /* 40px */
   line-height: 1.2000em; /* 48px */
   margin-bottom: 0.3000em;  margin-top: 0.3000em;
   @media only screen and (min-width: 40.063em) {
-    ont-size: 2.5000rem; /* 40px */
+    font-size: 2.5000rem; /* 40px */
     line-height: 1.2000em; /* 48px */
     margin-bottom: 0.3000em;  margin-top: 0.3000em;
   }
@@ -569,6 +569,8 @@ fieldset {
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border: solid $component-border-color;
+  border-width: 1px 0 0;
 }
 
 /*Inputs*/
@@ -827,6 +829,17 @@ select {
   border-color: $component-border-color;
 }
 
+/*Side Nav*/
+.side-nav {
+  li {
+    margin: 0;
+    &.divider {
+      border-top-color: $component-sub-bg-color;
+      margin: 0;
+    }
+  }
+}
+
 /*Subheader*/
 .subheader {
   margin-top: inherit;
@@ -980,5 +993,9 @@ table {
 
 /*End alphabetical order*/
 
-/*Adding in helpers*/
-@import "../scss/helpers/_helpers";
+/*Adding in helpers & custom styles*/
+@import "../scss/helpers/helpers";
+@import "../scss/helpers/custom";
+
+/*Importind docs styles*/
+@import "docs";

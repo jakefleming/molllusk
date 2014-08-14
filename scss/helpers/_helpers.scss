@@ -1,82 +1,96 @@
 /*Reusable equations & numbers*/
-$xs:  (1rem / 4);
-$s:   (1rem / 2);
-$m:   (1rem);
-$l:   (1rem * 2);
-$xl:  (1rem * 4);
+$space-xs:  (1rem / 4);
+$space-s:   (1rem / 2);
+$space-m:   (1rem);
+$space-l:   (1rem * 2);
+$space-xl:  (1rem * 4);
+
+$font-xs:  (1rem / 1.3);
+$font-s:   (1rem / 1.15);
+$font-m:   (1rem);
+$font-l:   (1rem * 1.25);
+$font-xl:  (1rem * 1.5);
+
+
+/*Font sizes*/
+
+.fxs    {font-size: $font-xs}
+.fs     {font-size: $font-s}
+.fm     {font-size: $font-m}
+.fl     {font-size: $font-l}
+.fxl    {font-size: $font-xl}
+
 
 /*Margins*/
 
 .man    {margin: 0}
-.maxs   {margin: $xs}
-.mas    {margin: $s}
-.mam    {margin: $m}
-.mal    {margin: $l}
-.maxl   {margin: $xl}
+.maxs   {margin: $space-xs}
+.mas    {margin: $space-s}
+.mam    {margin: $space-m}
+.mal    {margin: $space-l}
+.maxl   {margin: $space-xl}
 
 .mtn    {margin-top: 0}
-.mtxs   {margin-top: $xs}
-.mts    {margin-top: $s}
-.mtm    {margin-top: $m}
-.mtl    {margin-top: $l}
-.mtxl   {margin-top: $xl}
+.mtxs   {margin-top: $space-xs}
+.mts    {margin-top: $space-s}
+.mtm    {margin-top: $space-m}
+.mtl    {margin-top: $space-l}
+.mtxl   {margin-top: $space-xl}
 
 .mrn    {margin-right: 0}
-.mrxs   {margin-right: $xs}
-.mrs    {margin-right: $s}
-.mrm    {margin-right: $m}
-.mrl    {margin-right: $l}
-.mrxl   {margin-right: $xl}
+.mrxs   {margin-right: $space-xs}
+.mrs    {margin-right: $space-s}
+.mrm    {margin-right: $space-m}
+.mrl    {margin-right: $space-l}
+.mrxl   {margin-right: $space-xl}
 
 .mbn    {margin-bottom: 0}
-.mbxs   {margin-bottom: $xs}
-.mbs    {margin-bottom: $s}
-.mbm    {margin-bottom: $m}
-.mbl    {margin-bottom: $l}
-.mbxl   {margin-bottom: $xl}
+.mbxs   {margin-bottom: $space-xs}
+.mbs    {margin-bottom: $space-s}
+.mbm    {margin-bottom: $space-m}
+.mbl    {margin-bottom: $space-l}
+.mbxl   {margin-bottom: $space-xl}
 
 .mln    {margin-left: 0}
-.mlxs   {margin-left: $xs}
-.mls    {margin-left: $s}
-.mlm    {margin-left: $m}
-.mll    {margin-left: $l}
-.mlxl   {margin-left: $xl}
+.mlxs   {margin-left: $space-xs}
+.mls    {margin-left: $space-s}
+.mlm    {margin-left: $space-m}
+.mll    {margin-left: $space-l}
+.mlxl   {margin-left: $space-xl}
 
 /*Padding*/
 
 .pan    {padding: 0}
-.paxs   {padding: $xs}
-.pas    {padding: $s}
-.pam    {padding: $m}
-.pal    {padding: $l}
-.paxl   {padding: $xl}
+.paxs   {padding: $space-xs}
+.pas    {padding: $space-s}
+.pam    {padding: $space-m}
+.pal    {padding: $space-l}
+.paxl   {padding: $space-xl}
 
 .ptn    {padding-top: 0}
-.ptxs   {padding-top: $xs}
-.pts    {padding-top: $s}
-.ptm    {padding-top: $m}
-.ptl    {padding-top: $l}
-.ptxl   {padding-top: $xl}
+.ptxs   {padding-top: $space-xs}
+.pts    {padding-top: $space-s}
+.ptm    {padding-top: $space-m}
+.ptl    {padding-top: $space-l}
+.ptxl   {padding-top: $space-xl}
 
 .prn    {padding-right: 0}
-.prxs   {padding-right: $xs}
-.prs    {padding-right: $s}
-.prm    {padding-right: $m}
-.prl    {padding-right: $l}
-.prxl   {padding-right: $xl}
+.prxs   {padding-right: $space-xs}
+.prs    {padding-right: $space-s}
+.prm    {padding-right: $space-m}
+.prl    {padding-right: $space-l}
+.prxl   {padding-right: $space-xl}
 
 .pbn    {padding-bottom: 0}
-.pbxs   {padding-bottom: $xs}
-.pbs    {padding-bottom: $s}
-.pbm    {padding-bottom: $m}
-.pbl    {padding-bottom: $l}
-.pbxl   {padding-bottom: $xl}
+.pbxs   {padding-bottom: $space-xs}
+.pbs    {padding-bottom: $space-s}
+.pbm    {padding-bottom: $space-m}
+.pbl    {padding-bottom: $space-l}
+.pbxl   {padding-bottom: $space-xl}
 
 .pln    {padding-left: 0}
-.plxs   {padding-left: $xs}
-.pls    {padding-left: $s}
-.plm    {padding-left: $m}
-.pll    {padding-left: $l}
-.plxl   {padding-left: $xl}
-
-
+.plxs   {padding-left: $space-xs}
+.pls    {padding-left: $space-s}
+.plm    {padding-left: $space-m}
+.pll    {padding-left: $space-l}
+.plxl   {padding-left: $space-xl}
