@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation</title>
-    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="stylesheet" href="../stylesheets/docs.css" />
     <script src="../bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
@@ -17,27 +17,139 @@
                 <section class="left-small">
                     <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
                 </section>
-
                 <section class="middle tab-bar-section">
-                    <h1 class="title">Docs</h1>
+                    <h1 class="title">Appiphony Theme</h1>
                 </section>
 
             </nav>
 
             <aside class="left-off-canvas-menu">
                 <ul class="off-canvas-list">
-                    <li><label>Zurb components</label></li>
-                    <li><a href="#">Buttons</a></li>
-                    <li><a href="#">Forms</a></li>
-                    <li><label>Add ons</label></li>
+                    <li><label>Components</label></li>
+                    <li><a href="#accordion">Accordion</a></li>
+                    <li><a href="#">Alert Boxes</a></li>
+                    <li><a href="#blockGrid">Block Grid</a></li>
+                    <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#buttonDropdowns">Button Dropdowns</a></li>
+                    <li><a href="#buttonGroups">Button Groups</a></li>
+                    <li><a href="#buttonSplit">Buttons Split</a></li>
+                    <li><a href="#clearing">Clearing</a></li>
+                    <li><a href="#dropdowns">Dropdowns</a></li>
+                    <li><a href="#flexVideo">Flex Video</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#inlineLists">Inline Lists</a></li>
+                    <li><a href="#joyride">Joyride</a></li>
+                    <li><a href="#keystroke">Keystroke</a></li>
+                    <li><a href="#labels">Labels</a></li>
+                    <li><a href="#pagination">Pagination</a></li>
+                    <li><a href="#panels">Panels</a></li>
+                    <li><a href="#pricingTables">Pricing Tables</a></li>
+                    <li><a href="#proressBars">Progress Bars</a></li>
+                    <li><a href="#reveal">Reveal Modal</a></li>
+                    <li><a href="#sliders">Sliders</a></li>
+                    <li><a href="#tabs">Tabs</a></li>
+                    <li><a href="#sideNav">Side Nav</a></li>
+                    <li><a href="#subNav">Tabs</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#thumbnails">Thumbnails</a></li>
+                    <li><a href="#tooltips">Tooltips</a></li>
+                    <li><a href="#topBar">Top Bar</a></li>
+                    <li><a href="#type">Type</a></li>
+                    <li><a href="#visibility">Visibility</a></li>
                 </ul>
             </aside>
 
             <section class="main-section">
                 <!-- content goes here -->
-                <div class="row">
-                    <section id="alertBoxes">
-                        <div class="small-12 columns patd">
+                <section id="accordion" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Accordion</h4>
+                            <dl class="accordion" data-accordion>
+                                <dd class="accordion-navigation">
+                                    <a href="#panel1">Accordion 1</a>
+                                    <div id="panel1" class="content">
+                                        <dl class="tabs" data-tab>
+                                            <dd class="active"><a href="#panel2-1">Tab 1</a></dd>
+                                            <dd><a href="#panel2-2">Tab 2</a></dd>
+                                            <dd><a href="#panel2-3">Tab 3</a></dd>
+                                            <dd><a href="#panel2-4">Tab 4</a></dd>
+                                        </dl>
+                                        <div class="tabs-content">
+                                            <div class="content active" id="panel2-1">
+                                                <p>First panel content goes here...</p>
+                                            </div>
+                                            <div class="content" id="panel2-2">
+                                                <p>Second panel content goes here...</p>
+                                            </div>
+                                            <div class="content" id="panel2-3">
+                                                <p>Third panel content goes here...</p>
+                                            </div>
+                                            <div class="content" id="panel2-4">
+                                                <p>Fourth panel content goes here...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                                <dd class="accordion-navigation">
+                                    <a href="#panel2">Accordion 2</a>
+                                    <div id="panel2" class="content">
+                                        Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </dd>
+                                <dd class="accordion-navigation">
+                                    <a href="#panel3">Accordion 3</a>
+                                    <div id="panel3" class="content">
+                                        Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </dd>
+                            </dl>
+                            <pre class="mate"><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">dl</span> <span class="attribute">class</span>=<span class="value">"accordion"</span> <span class="attribute">data-accordion</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel1"</span>&gt;</span>Accordion 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel1"</span> <span class="attribute">class</span>=<span class="value">"content active"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">dl</span> <span class="attribute">class</span>=<span class="value">"tabs"</span> <span class="attribute">data-tab</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2-1"</span>&gt;</span>Tab 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2-2"</span>&gt;</span>Tab 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2-3"</span>&gt;</span>Tab 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2-4"</span>&gt;</span>Tab 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">          &lt;/<span class="title">dl</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"tabs-content"</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content active"</span> <span class="attribute">id</span>=<span class="value">"panel2-1"</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">p</span>&gt;</span>First panel content goes here...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">              &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel2-2"</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">p</span>&gt;</span>Second panel content goes here...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">              &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel2-3"</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">p</span>&gt;</span>Third panel content goes here...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">              &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel2-4"</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">p</span>&gt;</span>Fourth panel content goes here...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">              &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">          &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2"</span>&gt;</span>Accordion 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel2"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel3"</span>&gt;</span>Accordion 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel3"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">dl</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="alertBoxes" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
                             <h4>Alert Boxes</h4>
                             <div data-alert="" class="alert-box radius">
                                 This is a standard alert (div.alert-box.radius).
@@ -59,10 +171,47 @@
                                 This is a warning alert (div.alert-box.alert.radius).
                                 <a href="" class="close">×</a>
                             </div>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-alert</span> <span class="attribute">class</span>=<span class="value">"alert-box radius [success alert info warning]"</span>&gt;</span>
+<span class="comment">  &lt;!-- Your content goes here --&gt;</span>
+<span class="tag">  &lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"close"</span>&gt;</span>&amp;times;<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
                         </div>
-                    </section>
-                    <section id="buttonDropdowns">
-                        <div class="small-12 columns patd">
+                    </div>
+                </section>
+                <section id="#blockGrid" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Block Grid</h4>
+                            <p>Use a simple <code>small-block-grid-#</code> class to code up the block grid and specify the number of items in a row.</p>
+                            <ul class="small-block-grid-3">
+                                <li><img src="../assets/img/examples/placeholder-1.png" alt="placeholder"/></li>
+                                <li><img src="../assets/img/examples/placeholder-2.png" alt="placeholder"/></li>
+                                <li><img src="../assets/img/examples/placeholder-3.png" alt="placeholder"/></li>
+                            </ul>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"small-block-grid-3 [medium-block-grid-3 large-block-grid-3]"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="breadcrumbs" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Breadcrumbs</h4>
+                            <ul class="breadcrumbs">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li class="unavailable"><a href="#">Gene Splicing</a></li>
+                                <li class="current"><a href="#">Cloning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="buttonDropdowns" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
                             <h4>Buttons</h4>
                             <a href="#" class="button radius">
                                 Primary
@@ -73,8 +222,10 @@
                             <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;button radius&quot;</span>&gt;</span>Primary Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
 <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;default button radius&quot;</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div></code></pre>
                         </div>
-                    </section>
-                    <section id="buttons">
+                    </div>
+                </section>
+                <section id="buttons" class="example">
+                    <div class="row">
                         <div class="small-12 columns">
                             <h4>Button Dropdowns</h4>
                             <a href="#" data-dropdown="drop1" class="button radius dropdown">Dropdown Button</a>
@@ -96,19 +247,527 @@
 <span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Yet another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
+                <section id="buttonGroups" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Button Groups</h4>
+                            <ul class="button-group radius">
+                                <li><a href="#" class="button">Button 1</a></li>
+                                <li><a href="#" class="button">Button 2</a></li>
+                                <li><a href="#" class="button">Button 3</a></li>
+                            </ul>
+                            <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- A default button-group with small buttons inside --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group radius"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="buttonSplit" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Buttons Split</h4>
+                            <a href="#" class="button split radius">Split Button <span data-dropdown="drop"></span></a><br>
+                            <ul id="drop" class="f-dropdown" data-dropdown-content>
+                                <li><a href="#">This is a link</a></li>
+                                <li><a href="#">This is another</a></li>
+                                <li><a href="#">Yet another</a></li>
+                            </ul>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button split radius"</span>&gt;</span>Split Button <span class="tag">&lt;<span class="title">span</span> <span class="attribute">data-dropdown</span>=<span class="value">"drop"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"drop"</span> <span class="attribute">class</span>=<span class="value">"f-dropdown"</span> <span class="attribute">data-dropdown-content</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>This is a link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>This is another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Yet another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="clearing" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Clearing</h4>
+                            <ul class="clearing-thumbs mabd small-block-grid-3" data-clearing>
+                                <li><a class="th" href="../assets/img/examples/placeholder-1.png"><img src="../assets/img/examples/placeholder-1.png"></a></li>
+                                <li><a class="th" href="../assets/img/examples/placeholder-2.png"><img src="../assets/img/examples/placeholder-2.png" data-caption="This is my beautiful yellow star"></a></li>
+                                <li><a class="th" href="../assets/img/examples/placeholder-3.png"><img src="../assets/img/examples/placeholder-3.png"></a></li>
+                            </ul>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"clearing-thumbs small-block-grid-4"</span> <span class="attribute">data-clearing</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"path/to/your/img"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">data-caption</span>=<span class="value">"caption here..."</span> <span class="attribute">src</span>=<span class="value">"path/to/your/img-th"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"path/to/your/img"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">data-caption</span>=<span class="value">"caption 2 here..."</span> <span class="attribute">src</span>=<span class="value">"path/to/your/img-th"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"path/to/your/img"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">data-caption</span>=<span class="value">"caption 3 here..."</span> <span class="attribute">src</span>=<span class="value">"path/to/your/img-th"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="dropdowns" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Dropdowns</h4>
+                            <div>
+                                <a href="#" data-dropdown="dropdowned1">Has Dropdown</a>
+                                <ul id="dropdowned1" class="f-dropdown" data-dropdown-content>
+                                    <li><a href="#">This is a link</a></li>
+                                    <li><a href="#">This is another</a></li>
+                                    <li><a href="#">Yet another</a></li>
+                                </ul>
+                                <span> | </span>
+                                <a href="#" data-dropdown="drop-content2">Has Content Dropdown</a>
+                                <div id="drop-content2" data-dropdown-content class="f-dropdown content">
+                                    <p>Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!</p>
+                                </div>
+                                <pre class="matd"><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">data-dropdown</span>=<span class="value">"drop1"</span>&gt;</span>Has Dropdown<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"drop1"</span> <span class="attribute">class</span>=<span class="value">"f-dropdown"</span> <span class="attribute">data-dropdown-content</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>This is a link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>This is another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Yet another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">data-dropdown</span>=<span class="value">"drop2"</span>&gt;</span>Has Content Dropdown<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"drop2"</span> <span class="attribute">data-dropdown-content</span> <span class="attribute">class</span>=<span class="value">"f-dropdown content"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">p</span>&gt;</span>Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+                            </div>
+                            <div>
+                                <a href="#" data-options="align:top" data-dropdown="dropdown1" class="button radius">Top &raquo;</a>
+                                <ul id="dropdown1" class="f-dropdown" data-dropdown-content>
+                                    <li><a href="#">This is a link</a></li>
+                                    <li><a href="#">This is another</a></li>
+                                    <li><a href="#">Yet another</a></li>
+                                </ul>
+                                <a href="#" data-options="align:right" data-dropdown="dropdown2" class="button radius">Right &raquo;</a>
+                                <ul id="dropdown2" class="f-dropdown" data-dropdown-content>
+                                    <li><a href="#">This is a link</a></li>
+                                    <li><a href="#">This is another</a></li>
+                                    <li><a href="#">Yet another</a></li>
+                                </ul>
+                                <a href="#" data-options="align:bottom" data-dropdown="dropdown3" class="button radius">Down &raquo;</a>
+                                <ul id="dropdown3" class="f-dropdown" data-dropdown-content>
+                                    <li><a href="#">This is a link</a></li>
+                                    <li><a href="#">This is another</a></li>
+                                    <li><a href="#">Yet another</a></li>
+                                </ul>
+                                <a href="#" data-options="align:left" data-dropdown="dropdown4" class="button radius">Left &raquo;</a>
+                                <ul id="dropdown4" class="f-dropdown" data-dropdown-content>
+                                    <li><a href="#">This is a link</a></li>
+                                    <li><a href="#">This is another</a></li>
+                                    <li><a href="#">Yet another</a></li>
+                                </ul>
+                                <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">data-options</span>=<span class="value">"align:left"</span> <span class="attribute">data-dropdown</span>=<span class="value">"drop"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Link Dropdown &amp;raquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"drop"</span> <span class="attribute">class</span>=<span class="value">"[tiny small medium large content]f-dropdown"</span> <span class="attribute">data-dropdown-content</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>This is a link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>This is another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Yet another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="flexVideo" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Flex Video</h4>
+                        </div>
+                        <div class="small-6 columns">
+                            <div class="flex-video">
+                                <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"flex-video"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">iframe</span> <span class="attribute">width</span>=<span class="value">"420"</span> <span class="attribute">height</span>=<span class="value">"315"</span> <span class="attribute">src</span>=<span class="value">"//www.youtube.com/embed/aiBt44rrslw"</span> <span class="attribute">frameborder</span>=<span class="value">"0"</span> <span class="attribute">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+                        </div>
+                        <div class="small-6 columns">
+                            <div class="flex-video widescreen vimeo">
+                                <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            </div>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"flex-video widescreen vimeo"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">iframe</span> <span class="attribute">src</span>=<span class="value">"<a href="http://player.vimeo.com/video/60122989">http://player.vimeo.com/video/60122989</a>"</span> <span class="attribute">width</span>=<span class="value">"400"</span> <span class="attribute">height</span>=<span class="value">"225"</span> <span class="attribute">frameborder</span>=<span class="value">"0"</span> <span class="attribute">webkitAllowFullScreen</span> <span class="attribute">mozallowfullscreen</span> <span class="attribute">allowFullScreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="forms" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Forms</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Input Label
+                                            <input type="text" placeholder="large-12.columns" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="large-4 columns">
+                                        <label>Input Label
+                                            <input type="text" placeholder="large-4.columns" />
+                                        </label>
+                                    </div>
+                                    <div class="large-4 columns">
+                                        <label>Input Label
+                                            <input type="text" placeholder="large-4.columns" />
+                                        </label>
+                                    </div>
+                                    <div class="large-4 columns">
+                                        <div class="row collapse">
+                                            <label>Input Label</label>
+                                            <div class="small-9 columns">
+                                                <input type="text" placeholder="small-9.columns" />
+                                            </div>
+                                            <div class="small-3 columns">
+                                                <span class="postfix">.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Select Box
+                                            <select>
+                                                <option value="husker">Husker</option>
+                                                <option value="starbuck">Starbuck</option>
+                                                <option value="hotdog">Hot Dog</option>
+                                                <option value="apollo">Apollo</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="large-6 columns">
+                                        <label>Choose Your Favorite</label>
+                                        <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+                                        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+                                    </div>
+                                    <div class="large-6 columns">
+                                        <label>Check these out</label>
+                                        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                        <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Textarea Label
+                                            <textarea placeholder="small-12.columns"></textarea>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-12 columns"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">label</span>&gt;</span>Input Label
+<span class="tag">              &lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">placeholder</span>=<span class="value">"large-12.columns"</span> /&gt;</span>
+<span class="tag">          &lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-4 columns"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">label</span>&gt;</span>Input Label
+<span class="tag">              &lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">placeholder</span>=<span class="value">"large-4.columns"</span> /&gt;</span>
+<span class="tag">          &lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-4 columns"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">label</span>&gt;</span>Input Label
+<span class="tag">              &lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">placeholder</span>=<span class="value">"large-4.columns"</span> /&gt;</span>
+<span class="tag">          &lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-4 columns"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row collapse"</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">label</span>&gt;</span>Input Label<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-9 columns"</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">placeholder</span>=<span class="value">"small-9.columns"</span> /&gt;</span>
+<span class="tag">              &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">              &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-3 columns"</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"postfix"</span>&gt;</span>.com<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">              &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">          &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-12 columns"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">label</span>&gt;</span>Select Box
+<span class="tag">              &lt;<span class="title">select</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"husker"</span>&gt;</span>Husker<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"starbuck"</span>&gt;</span>Starbuck<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"hotdog"</span>&gt;</span>Hot Dog<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+<span class="tag">                  &lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"apollo"</span>&gt;</span>Apollo<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+<span class="tag">              &lt;/<span class="title">select</span>&gt;</span>
+<span class="tag">          &lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-6 columns"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">label</span>&gt;</span>Choose Your Favorite<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span> <span class="attribute">name</span>=<span class="value">"pokemon"</span> <span class="attribute">value</span>=<span class="value">"Red"</span> <span class="attribute">id</span>=<span class="value">"pokemonRed"</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"pokemonRed"</span>&gt;</span>Red<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span> <span class="attribute">name</span>=<span class="value">"pokemon"</span> <span class="attribute">value</span>=<span class="value">"Blue"</span> <span class="attribute">id</span>=<span class="value">"pokemonBlue"</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"pokemonBlue"</span>&gt;</span>Blue<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-6 columns"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">label</span>&gt;</span>Check these out<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">"checkbox1"</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"checkbox1"</span>&gt;</span>Checkbox 1<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">"checkbox2"</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"checkbox2"</span>&gt;</span>Checkbox 2<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+<span class="tag">      &lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-12 columns"</span>&gt;</span>
+<span class="tag">          &lt;<span class="title">label</span>&gt;</span>Textarea Label
+<span class="tag">          &lt;<span class="title">textarea</span> <span class="attribute">placeholder</span>=<span class="value">"small-12.columns"</span>&gt;</span><span class="tag">&lt;/<span class="title">textarea</span>&gt;</span>
+<span class="tag">          &lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">      &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">  &lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="inlineLists" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Inline Lists</h4>
+                            <ul class="inline-list">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                                <li><a href="#">Link 4</a></li>
+                                <li><a href="#">Link 5</a></li>
+                            </ul>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"inline-list"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Link 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Link 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Link 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Link 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Link 5<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="joyride" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Joyride</h4>
+                            <p>Visit Zurb's docs for <a href="http://foundation.zurb.com/docs/components/joyride.html>">implementation guide</a>.</p>
+                            <div class="relative">
+                                <div class="joyride-tip-guide block-i">
+                                    <span class="joyride-nub top"></span>
+                                    <div class="joyride-content-wrapper">
+                                        <p>This is what a joyride tooltip looks like</p>
+                                        <a href="#" class="small button joyride-next-tip radius">Next</a>
+                                        <a href="#close" class="joyride-close-tip">&times;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="keystroke" class="example" style="margin-top: 128px;">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Keystroke</h4>
+                            <p>For example, to close your browser hit <kbd>Cmd</kbd> + <kbd>Q</kbd></p>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">p</span>&gt;</span>For example, to close your browser hit <span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Cmd<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span> + <span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Q<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="labels">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Labels</h4>
+                            <span class=" radius label">Label</span>
+                            <span class=" radius success label">Label</span>
+                            <span class=" radius secondary label">Label</span>
+                            <pre class="matd"><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"[success alert secondary] [round radius] label"</span>&gt;</span>Advanced Label<span class="tag">&lt;/<span class="title">span</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="pagination" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Pagination</h4>
+                            <ul class="pagination">
+                                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                                <li class="current"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li class="unavailable"><a href="">&hellip;</a></li>
+                                <li><a href="">12</a></li>
+                                <li><a href="">13</a></li>
+                                <li class="arrow"><a href="">&raquo;</a></li>
+                            </ul>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pagination"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"arrow unavailable"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;laquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"current"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"unavailable"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;hellip;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>12<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>13<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;raquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="panels" class="example">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Panels</h4>
+                            <div class="row">
+                                <div class="large-6 columns">
+                                    <div class="panel">
+                                        <h5>This is a regular panel.</h5>
+                                        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                                    </div>
+                                </div>
+                                <div class="large-6 columns">
+                                    <div class="panel callout radius">
+                                        <h5>This is a radius callout panel.</h5>
+                                        <p>It's a little ostentatious, but useful for important content.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">h5</span>&gt;</span>This is a regular panel.<span class="tag">&lt;/<span class="title">h5</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">p</span>&gt;</span>It has an easy to override visual style, and is appropriately subdued.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel callout radius"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">h5</span>&gt;</span>This is a radius callout panel.<span class="tag">&lt;/<span class="title">h5</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">p</span>&gt;</span>It's a little ostentatious, but useful for important content.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="pricingTables">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Pricing Tables</h4>
+                            <div class="row">
+                                <div class="large-4 columns">
+                                    <ul class="pricing-table">
+                                        <li class="title">Standard</li>
+                                        <li class="price">$99.99</li>
+                                        <li class="description">An awesome description</li>
+                                        <li class="bullet-item">1 Database</li>
+                                        <li class="bullet-item">5GB Storage</li>
+                                        <li class="bullet-item">20 Users</li>
+                                        <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <pre class="matd"><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pricing-table"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"title"</span>&gt;</span>Standard<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"price"</span>&gt;</span>$99.99<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"description"</span>&gt;</span>An awesome description<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"bullet-item"</span>&gt;</span>1 Database<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"bullet-item"</span>&gt;</span>5GB Storage<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"bullet-item"</span>&gt;</span>20 Users<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"cta-button"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"button radius"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Buy Now<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="progressBars">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Progress</h4>
+                            <div class="progress large-6"><span class="meter" style="width: 40%"></span></div>
+                            <div class="radius progress success large-8"><span class="meter" style="width: 80%"></span></div>
+                            <div class="nice round progress alert large-10"><span class="meter" style="width: 30%"></span></div>
+                            <div class="nice secondary progress"><span class="meter" style="width: 50%"></span></div>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress [small-# large-#] [secondary alert success] [radius round]"</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"meter"</span> <span class="attribute">style</span>=<span class="value">"width: [1 - 100]%"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section id="revealModal">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Reveal Modal</h4>
+                            <a href="#" data-reveal-id="firstModal" class="radius button">Example Modal&hellip;</a>
+                            <a href="#" data-reveal-id="videoModal" class="radius button">Example Video Modal&hellip;</a>
+
+                            <!-- Reveal Modals begin -->
+                            <div id="firstModal" class="reveal-modal" data-reveal>
+                                <h2>This is a modal.</h2>
+                                <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will also dismiss it.</p>
+                                <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
+                                <p><a href="#" data-reveal-id="secondModal" class="secondary button">Second Modal&hellip;</a></p>
+                                <a class="close-reveal-modal">&#215;</a>
+                            </div>
+
+                            <div id="secondModal" class="reveal-modal" data-reveal>
+                                <h2>This is a second modal.</h2>
+                                <p>See? It just slides into place after the first modal. Very handy when you need subsequent dialogs, or when a modal option impacts or requires another decision.</p>
+                                <a class="close-reveal-modal">&#215;</a>
+                            </div>
+
+                            <div id="videoModal" class="reveal-modal large" data-reveal>
+                                <h2>This modal has video</h2>
+                                <div class="flex-video">
+                                    <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+                                </div>
+
+                                <a class="close-reveal-modal">&#215;</a>
+                            </div>
+                            <!-- Reveal Modals end -->
+                        </div>
+                    </div>
+                </section>
+                <section id="sliders">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h4>Sliders</h4>
+                            <div class="range-slider" data-slider>
+                                <span class="range-slider-handle"></span>
+                                <span class="range-slider-active-segment"></span>
+                                <input type="hidden">
+                            </div>
+                            <div class="range-slider radius" data-slider>
+                                <span class="range-slider-handle"></span>
+                                <span class="range-slider-active-segment"></span>
+                                <input type="hidden">
+                            </div>
+                            <div class="range-slider round" data-slider>
+                                <span class="range-slider-handle"></span>
+                                <span class="range-slider-active-segment"></span>
+                                <input type="hidden">
+                            </div>
+                            <div class="range-slider" data-slider data-options="step: 20;">
+                                <span class="range-slider-handle"></span>
+                                <span class="range-slider-active-segment"></span>
+                                <input type="hidden">
+                            </div>
+                            <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"range-slider"</span> <span class="attribute">data-slider</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"range-slider-handle"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"range-slider-active-segment"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">  &lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"hidden"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+                        </div>
+                    </div>
+                </section>
             </section>
 
             <a class="exit-off-canvas"></a>
 
         </div>
     </div>
+
+
+
 </div>
 
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/foundation/js/vendor/jquery.js"></script>
 <script src="../bower_components/foundation/js/foundation.min.js"></script>
-<script src="../bower_components/foundation/js/foundation/foundation.orbit.js"></script>
 <script src="../js/app.js"></script>
+<script src="../bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+<script src="../bower_components/foundation/js/vendor/jquery.cookie.js"></script>
+
+<!--<script type="text/javascript">-->
+    <!--$(document).foundation().foundation('joyride', 'start');-->
+<!--</script>-->
+
 </body>
 </html>

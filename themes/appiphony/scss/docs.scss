@@ -1,11 +1,22 @@
+@import "theme";
+
+
+code {
+  font-weight: normal;
+  color: #333;
+  background-color: #f8f8f8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dfdfdf;
+  padding: 0.11111rem 0.27778rem 0.05556rem;
+}
+
 pre {
   margin-bottom: 15px;
   display: block;
   background: $bg-2;
   color: $body-font-color;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #dfdfdf;
+
   @include radius-all;
   .tag, .tag .title {
     color: #000080;
@@ -31,5 +42,19 @@ pre {
       font-weight: normal;
     }
   }
+}
+
+.main-section {
+  section {
+    padding: 1rem 0 3rem 0
+  }
+}
+
+.row {
+  max-width: 100%;
+}
+
+.reveal-modal, .reveal-modal-bg {
+  z-index: 1024;
 }
 
