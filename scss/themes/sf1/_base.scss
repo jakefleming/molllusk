@@ -1,0 +1,1140 @@
+/*General styles*/
+body {
+  background-color: $bg-2;
+}
+
+h1,h2,h3,h4,h5, h6 {
+  color: $body-font-color;
+  font-weight: 300;
+  @media only screen and (min-width: 40.063em) {
+  }
+}
+
+h1, h1.subheader{
+  font-size: 3.0000rem; /* 48px */
+  line-height: 1.0000em; /* 48px */
+  margin-bottom: 0.2500em;  margin-top: 0.2500em;
+  @media only screen and (min-width: 40.063em) {
+    font-size: 3.0000rem; /* 48px */
+    line-height: 1.0000em; /* 48px */
+    margin-bottom: 0.2500em;  margin-top: 0.2500em;
+  }
+}
+h2, h2.subheader {
+  font-size: 2.5000rem; /* 40px */
+  line-height: 1.2000em; /* 48px */
+  margin-bottom: 0.3000em;  margin-top: 0.3000em;
+  @media only screen and (min-width: 40.063em) {
+    font-size: 2.5000rem; /* 40px */
+    line-height: 1.2000em; /* 48px */
+    margin-bottom: 0.3000em;  margin-top: 0.3000em;
+  }
+}
+h3, h3.subheader{
+  font-size: 2.0000rem; /* 32px */
+  line-height: 1.5000em; /* 48px */
+  margin-bottom: 0.7500em;  margin-top: 0.0000em;
+  @media only screen and (min-width: 40.063em) {
+    font-size: 2.0000rem; /* 32px */
+    line-height: 1.5000em; /* 48px */
+    margin-bottom: 0.3750em;  margin-top: 0.3750em;
+  }
+}
+h4, h4.subheader {
+  font-size: 1.5000rem; /* 24px */
+  line-height: 1.0000em; /* 24px */
+  margin-bottom: .5000em;  margin-top: 0.5000em;
+  @media only screen and (min-width: 40.063em) {
+    font-size: 1.5000rem; /* 24px */
+    line-height: 1.0000em; /* 24px */
+    margin-bottom: .5000em;  margin-top: 0.5000em;
+  }
+}
+h5, h5.subheader {
+  font-size: 1.0000rem; /* 16px */
+  line-height: 1.5000em; /* 24px */
+  margin-bottom: .7500em;  margin-top: 0.7500em;
+  @media only screen and (min-width: 40.063em) {
+    ffont-size: 1.0000rem; /* 16px */
+    line-height: 1.5000em; /* 24px */
+    margin-bottom: .7500em;  margin-top: 0.7500em;
+  }
+}
+h6, h6.subheader {
+  font-size: 0.8750rem; /* 14px */
+  line-height: 1.7143em; /* 24px */
+  margin-bottom: .85715em;  margin-top: .85715em;
+  @media only screen and (min-width: 40.063em) {
+    font-size: 0.8750rem; /* 14px */
+    line-height: 1.7143em; /* 24px */
+    margin-bottom: .85715em;  margin-top: .85715em;
+  }
+}
+
+p {
+  font-size: 1.0000rem; /* 16px */
+  line-height: 1.5000em; /* 24px */
+  margin-bottom: 1.5000em;  margin-top: 0.0000em;
+  > * {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/**************From this point on in alphabetical order**************/
+
+/*Accordions*/
+.accordion, .accordion .accordion-navigation {
+  dd > .content, > .content {
+    padding: 1rem;
+    border-bottom: 1px solid $component-sub-bg-color;
+  }
+  > dd {
+    &:last-child {
+      .content {
+        border-bottom: 0px;
+      }
+    }
+    > a {
+      background-color: $component-bg-color;
+      padding: 1rem;
+      border-bottom: 1px solid $component-sub-bg-color;
+    }
+    &:last-child {
+      > a {
+        border-bottom: 0px;
+      }
+    }
+    &.active {
+      > a {
+        background-color: $component-bg-color;
+        border-bottom: 0px;
+      }
+    }
+    &:hover {
+      > a {
+        background-color: $component-bg-color;
+      }
+    }
+  }
+  &.bordered {
+    dd > .content, > .content {
+      padding: 1rem;
+    }
+    > dd {
+      @include border;
+      border-color: $component-border-color;
+      border-top-width: 0px;
+      .content {
+        border-bottom-width: 0;
+      }
+      > a {
+        background-color: $component-bg-color;
+        border-bottom-width: 0;
+        padding: 1rem;
+      }
+      &.active {
+        > a {
+          background-color: $component-bg-color;
+        }
+      }
+      &:first-child {
+        border-top-width: 1px;
+      }
+      &:hover {
+        > a {
+          background-color: $component-bg-color-hover;
+        }
+      }
+    }
+  }
+}
+
+/*Alerts*/
+.alert-box {
+  background-color: $component-sub-bg-color;
+  border: 0px;
+  box-shadow: 0 1px 0 $component-border-color;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  color: $component-font-color;
+  margin-bottom: 1rem;
+  &.success, &.alert, &.info {
+    background-color: $component-sub-bg-color;
+    border-color: $component-border-color;
+    color: $component-font-color;
+  }
+  &.secondary {
+    border-color: $component-border-color;
+    color: $component-font-color;
+    background: $component-bg-color;
+  }
+  .close {
+    right: 1rem;
+    font-size: 2rem;
+    margin-top: -.5rem;
+  }
+  &:before {
+    font-family: "icon-utility";
+    line-height: 1;
+    position: relative;
+    top: (1rem/8);
+  }
+  &.alert {
+    &:before {
+      content: "\e024";
+      color: $alert-color;
+      margin-right: .5rem;
+    }
+  }
+  &.success {
+    &:before {
+      content: "\e02a";
+      color: $success-color;
+      margin-right: .5rem;
+    }
+  }
+  &.info {
+    &:before {
+      content: "\e02d";
+      color: $info-color;
+      margin-right: .5rem;
+    }
+  }
+}
+
+/*Breadcrumbs*/
+.breadcrumbs {
+  border: 0px;
+  background-color: $component-bg-color;
+  padding: .6rem 1rem;
+  > * {
+    font-size: .75rem;
+  }
+  &.bordered {
+    border-color: $component-border-color;
+    border-width: 1px;
+    border-style: solid;
+  }
+}
+
+/*Buttons*/
+.button, button {
+  @include button(
+  );
+  padding: .65rem 1rem;
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  vertical-align: top;
+  &.tiny {
+    padding: .3rem .5rem ;
+    font-size: .75rem;
+  }
+  &.small {
+    padding: .5rem .75rem;
+    font-size: .875rem;
+  }
+  &.large {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+  }
+  &.secondary {
+    border-color: $component-border-color;
+    color: $component-alt-font-color;
+    &:hover {
+      background-color: $component-bg-color-hover;
+    }
+  }
+  /*&.secondary {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    @include border;
+    border-color: $component-border-color;
+    &:hover {
+      background-color: $component-bg-color-hover;
+    }
+    &.tiny {
+      padding-top: .25rem ;
+      padding-bottom: .25rem ;
+    }
+    &.small {
+      padding-top: .45rem;
+      padding-bottom: .45rem;
+    }
+    &.large {
+      padding-top: .95rem;
+      padding-bottom: .95rem;
+    }
+  }*/
+  &.bordered {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    @include border;
+    &.tiny {
+      padding-top: .25rem ;
+      padding-bottom: .25rem ;
+    }
+    &.small {
+      padding-top: .45rem;
+      padding-bottom: .45rem;
+    }
+    &.large {
+      padding-top: .95rem;
+      padding-bottom: .95rem;
+    }
+  }
+  &.alert {
+    color: #fff;
+  }
+  &.dropdown {
+    padding-right: 2.5rem;
+    &:after {
+      right: 1rem;
+    }
+    &.tiny {
+      &:after {
+        border-width: 0.375rem;
+      }
+    }
+    &.small {
+      &:after {
+        border-width: 0.375rem;
+      }
+    }
+    &.large {
+      padding-right: 4.25rem;
+      &:after {
+        border-width: 0.5rem;
+      }
+    }
+    &.dropdown-la {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      text-align: left;
+      padding-left: 1rem!important;
+      padding-right: 2.5rem!important;
+    }
+    &.open, &#daterange.active {
+      &:after {
+        transform:rotate(180deg);
+        -ms-transform:rotate(180deg); /* IE 9 */
+        -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+      }
+    }
+    &:after {
+      -webkit-transition: all ease .2s;
+      -moz-transition: all ease .2s;
+      -o-transition: all ease .2s;
+      transition: all ease .2s;
+      transition-timing-function: ease-in-out;
+      -webkit-transition-timing-function: ease-in-out;
+      transition-duration: .5s;
+      -webkit-transition-duration: .5s;
+      color: #fff;
+      font-family: 'icomoon';
+      border: 0;
+      content: "\e008";
+      margin-top: -.5em;
+      width: 1em;
+      height: 1em;
+    }
+    &.secondary {
+      &:after {
+        color: $input-icon-color;
+      }
+    }
+    &.large {
+      &:after {
+        right: 2rem;
+        margin-top: -.5em;
+      }
+    }
+    &.small {
+      &:after {
+        margin-top: -.5em;
+
+      }
+    }
+    &.tiny {
+      &:after {
+        margin-top: -.5em;
+      }
+    }
+  }
+  &.split {
+    padding-right: 4.1rem;
+    > span {
+      border-left-color: $button-border-color;
+    }
+    > span {
+      &:after {
+        top: 50%;
+      }
+    }
+    &.secondary {
+      > span {
+        border-left-color: $component-border-color;
+      }
+    }
+    &.success {
+      > span {
+        border-left-color: $success-button-border-color;
+      }
+    }
+    &.alert {
+      > span {
+        border-left-color: $alert-button-border-color;
+      }
+    }
+    &:hover {
+      > span {
+        border-left-color: darken($button-border-color, 10%);
+      }
+      &.secondary {
+        > span {
+          border-left-color: darken($component-border-color, 10%);
+        }
+      }
+      &.success {
+        > span {
+          border-left-color: darken($success-button-border-color, 10%);
+        }
+      }
+      &.alert {
+        > span {
+          border-left-color: darken($alert-button-border-color, 10%);
+        }
+      }
+    }
+    span {
+      &:after {
+        -webkit-transition: all ease .2s;
+        -moz-transition: all ease .2s;
+        -o-transition: all ease .2s;
+        transition: all ease .2s;
+        transition-timing-function: ease-in-out;
+        -webkit-transition-timing-function: ease-in-out;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+        color: #fff;
+        font-family: 'icomoon';
+        border-width: 0!important;
+        content: "\e008";
+        margin-top: -.5em;
+        width: 1em;
+        height: 1em;
+        margin-left: -.6rem;
+      }
+    }
+    &.tiny {
+      span {
+        &:after {
+          margin-left: -.375rem;
+        }
+      }
+    }
+    &.small {
+      span {
+        &:after {
+          margin-left: -.375rem;
+        }
+      }
+    }
+    &.large {
+      span {
+        &:after {
+          margin-left: -.7rem;
+        }
+      }
+    }
+    &.secondary {
+      span {
+        &:after {
+          color: $input-icon-color;
+        }
+      }
+    }
+
+  }
+}
+
+.button-group, .button-group.radius, .button-group.round {
+  > li {
+    .button, button {
+      border-width: 0px;
+      border-left-width: 0px;
+    }
+  }
+}
+
+.button-group.bordered, .button-group.radius.bordered, .button-group.round.bordered {
+  > li {
+    .button, button {
+      @include border;
+      border-left-width: 0px;
+      border-color: $button-border-color;
+      padding-top: .6rem;
+      padding-bottom: .6rem;
+      &.tiny {
+        padding-top: .25rem ;
+        padding-bottom: .25rem ;
+      }
+      &.small {
+        padding-top: .45rem;
+        padding-bottom: .45rem;
+      }
+      &.large {
+        padding-top: .95rem;
+        padding-bottom: .95rem;
+      }
+      &.secondary {
+        border-color: $component-border-color;
+      }
+      &.success {
+        border-color: $success-button-border-color;
+      }
+      &.alert {
+        border-color: $alert-button-border-color;
+      }
+    }
+    &:first-child {
+      .button, button {
+        border-left-width: 1px;
+        border-style: solid;
+      }
+    }
+  }
+}
+
+/* Checkboxes and Radios
+   ========================================================================== */
+input[type=checkbox], input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $component-border-color;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: $radio-checkbox-size;
+  width: 1.5rem;
+  vertical-align: bottom;
+  margin: 0;
+  outline: none!important;
+  &:disabled {
+    opacity: 0.5; }
+  &:focus, &:active {
+    background: $component-bg-color-hover;
+  }
+  &:checked {
+    background: $primary-color !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+  }
+}
+
+input[type=checkbox] {
+  @include radius($global-radius);
+  &:checked {
+    &:after {
+      display: block;
+      position: relative;
+      content: '';
+      height: 8px;
+      width: 14px;
+      border-bottom: 4px solid #fff;
+      border-left: 4px solid #fff;
+      -webkit-transform: translate(4px, 6px) rotate(-45deg);
+    }
+  }
+}
+
+input[type=radio] {
+  @include radius($radio-checkbox-size/2);
+  &:checked {
+    &:after {
+      display: block;
+      position: relative;
+      content: '';
+      left: 6px;
+      top: 6px;
+      height: 10px;
+      width: 10px;
+      border-radius: 100%;
+      background: #fff;
+    }
+  }
+}
+
+/*Definitions*/
+dl {
+  dt {
+    font-weight: 900;
+  }
+  dd {
+    font-weight: lighter;
+  }
+}
+
+/*Dropdown menus*/
+.f-dropdown, .f-dropdown.content {
+  @include radius($global-radius);
+  border-width: 0;
+  border-color: $component-border-color;
+  &.bordered {
+    border-width: 1px;
+    &:after {
+      display: block;
+    }
+  }
+  &:after {
+    display: none;
+  }
+  .divider {
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    background-color: $component-bg-color-hover;
+  }
+  .dropdown-header {
+    padding: .5rem 1rem;
+    display: block;
+    margin: 0px;
+    font-size: .75em;
+    color: $input-icon-color;
+    text-transform: uppercase;
+    display: block;
+    padding: .5rem 1rem;
+    font-weight: lighter;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #f5f6f7;
+    background: transparent;
+    line-height: 1rem;
+    min-height: 0px;
+    &:hover {
+      background: transparent;
+      cursor: initial;
+    }
+  }
+}
+
+/*Fieldsets*/
+fieldset {
+  border: 0px;
+  background-color: $component-bg-color;
+  &.bordered {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $component-border-color;
+  }
+  legend {
+    float: left;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+/*Horizontal rule*/
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: solid $component-border-color;
+  border-width: 1px 0 0;
+}
+
+/*Inputs*/
+input[type="text"],
+input[type="password"],
+input[type="date"], input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  border: 0px;
+  &.bordered {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $component-border-color;
+  }
+  &.secondary {
+    background-color: $input-sub-bg-color;
+    &:focus {
+      background-color: $input-focus-bg-color;
+    }
+  }
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  &:-moz-placeholder {
+    color: $input-placeholder-color;
+  }
+  &::-moz-placeholder {
+    color: $input-placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    color: $input-placeholder-color;
+  }
+  &::-webkit-input-placeholder {
+    color: $input-placeholder-color;
+  }
+}
+textarea {
+  height: auto;
+  min-height: 5rem;
+}
+
+/*Joyride*/
+.joyride-tip-guide {
+  background: $tooltip-bg;
+  .joyride-nub {
+    &.top, &.bottom, &.left, &.right {
+      border-color: $tooltip-bg;
+    }
+  }
+}
+
+.joyride-close-tip, .joyride-close-tip:hover {
+  color: #fff!important;
+}
+
+/*Keystroke*/
+.keystroke, kbd {
+  padding: .4rem .5rem;
+  background-color: $component-sub-bg-color;
+  border-color: $component-border-color;
+  font-size: .875rem;
+
+}
+
+/*Labels*/
+label {
+  font-weight: lighter;
+}
+.label {
+  padding: .4rem .5rem;
+  background-color: $primary-color-darker;
+  &.bordered {
+    @include border;
+    padding: .35rem .5rem;
+    border-color: $button-border-color;
+    &.secondary {
+      border-color: $component-border-color;
+    }
+    &.success {
+      border-color: $success-button-border-color;
+    }
+    &.alert {
+      border-color: $alert-button-border-color;
+    }
+  }
+}
+
+/*Lists*/
+ul, ol, dl {
+  line-height: $base-line-height;
+}
+
+/*Magellan*/
+[data-magellan-expedition]{
+  left: 0;
+  &.bordered {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $component-border-color;
+  }
+}
+
+/*Pagination*/
+ul.pagination {
+  li.current, li {
+    a {
+      padding: 0 .585rem;
+    }
+  }
+}
+
+/*Panels*/
+.panel {
+  padding: 1rem;
+  border: 0px;
+  background: $component-bg-color;
+  .panel-body, .panel-top {
+    padding: 1rem;
+  }
+  .panel-top {
+    border-bottom: 1px solid $component-bg-color-hover;
+    background: $component-bg-color;
+    .panel-header {
+      font-size: 1.25rem;
+      margin: 0px;
+      line-height: 1.5rem;
+    }
+    .panel-subheader {
+      font-size: .875rem;
+      margin: 0px;
+      color: $body-font-color;
+      line-height: 1rem;
+    }
+  }
+  &.bordered {
+    @include border;
+    border-color: $component-border-color;
+  }
+}
+
+/*Postfix*/
+span.postfix {
+  background-color: $component-bg-color;
+  color: $component-font-color;
+  border-color: $component-border-color;
+  height: 2.5rem;
+}
+
+/*Pricing*/
+.pricing-table {
+  border-width: 0px;
+  border-color: $component-border-color;
+  margin-bottom: 1rem;
+  &.bordered {
+    border-width: 1px;
+  }
+  .title {
+    background-color: $component-bg-color;
+    color: $component-font-color;
+    padding: 1rem;
+  }
+  .price {
+    background-color: $component-bg-color-hover;
+    color: $component-font-color;
+    border-top: 1px solid $component-sub-bg-color;
+    border-bottom: 1px solid $component-sub-bg-color;
+  }
+  .description, .bullet-item {
+    border-bottom-style: solid;
+    border-bottom-color: $component-sub-bg-color;
+    color: $component-sub-font-color;
+  }
+  .bullet-item {
+    font-size: 1rem;
+    padding: 1rem 1rem .935rem 1rem;
+  }
+  .description {
+    font-size: .75rem;
+    padding: 1rem 1rem .935rem 1rem;
+  }
+  .cta-button {
+    padding: 1rem 1rem 1.1rem 1rem;
+    button, .button {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*Progress*/
+.progress {
+  height: 1rem;
+  padding: .1875rem;
+  background-color: $component-bg-color;
+  border-color: $component-border-color;
+  &.secondary {
+    .meter {
+      background-color: $component-sub-bg-color;
+    }
+  }
+}
+
+/*Range*/
+.range-slider {
+  height: 1rem;
+  padding: .1875rem;
+  background-color: $component-bg-color;
+  border-color: $component-border-color;
+  .range-slider-active-segment {
+    background: $primary-color;
+    left: 0;
+    top: 0;
+    border: 2px solid #fff;
+  }
+  &.radius {
+    .range-slider-active-segment {
+      @include radius($global-radius);
+    }
+  }
+  &.round {
+    .range-slider-active-segment {
+      @include radius(1000px);
+    }
+  }
+}
+
+.range-slider, .range-slider.radius, .range-slider.round {
+  .range-slider-handle, .range-slider-handle.radius, .range-slider-handle.round {
+    background-color: $component-bg-color;
+    border-color: $component-border-color;
+    @include border;
+    top: -.25rem;
+    &:hover {
+      background-color: $component-bg-color-hover;
+    }
+  }
+}
+
+/*Reveal*/
+.reveal-modal {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-width: 0px;
+  padding: 2rem;
+}
+
+.reveal-modal-bg, .joyride-modal-bg {
+  background-color: adjust-color($body-font-color, $hue: -1, $saturation: -6, $lightness: 4, $alpha: -.3); // 209, 29%, 29%, 0.701961
+}
+
+dialog .close-reveal-modal, .reveal-modal .close-reveal-modal {
+  right: 1rem;
+  top: 1rem;
+  line-height: 1.25rem;
+}
+
+/*Selects*/
+select {
+  height: 2.5rem;
+  background-color: $component-bg-color;
+  border-color: $component-border-color;
+  font-family: $body-font-family;
+}
+
+.select-wrapper {
+  position: absolute;
+  &:after {
+    -webkit-transition: all ease .2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease .2s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    color: #fff;
+    font-family: 'icomoon';
+    border: 0;
+    content: "\e008";
+    margin-top: -.5em;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    color: $input-icon-color;
+    z-index: 0;
+    line-height: 1;
+  }
+  select {
+    background-image: none;
+    padding-left: 1rem !important;
+    padding-right: 2.5rem !important;
+    margin: 0px;
+    @include radius($global-radius);
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+/*Side Nav*/
+.side-nav {
+  li {
+    margin: 0;
+    &.divider {
+      border-top-color: $component-sub-bg-color;
+      margin: 0;
+    }
+  }
+}
+
+/*Subheader*/
+.subheader {
+  margin-top: inherit;
+  margin-bottom: inherit;
+  line-height: inherit;
+  color: $component-sub-font-color;
+  font-weight: lighter;
+}
+
+/*Tabs*/
+.tabs {
+  dd {
+    > a {
+      background-color: $component-sub-bg-color;
+      &:hover {
+        background-color: $component-bg-color-hover;
+      }
+    }
+    &.active {
+      > a, > a:hover {
+        background-color: $component-bg-color;
+      }
+    }
+  }
+  &.vertical {
+    dd {
+      > a {
+        padding: 1rem;
+      }
+    }
+  }
+  &.bordered {
+    background-color: $component-sub-bg-color;
+    box-shadow: inset 0 -1px 0 $component-border-color;
+    dd {
+      > a {
+        @include border;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-top-width: 0px;
+        border-color: $component-border-color;
+        background-color: $component-sub-bg-color;
+        &:hover {
+          background-color: $component-bg-color-hover;
+        }
+      }
+      &.active {
+        > a {
+          background-color: $component-bg-color;
+          @include border;
+          border-bottom-width: 0px;
+        }
+      }
+    }
+    &.vertical {
+      @include border;
+      border-color: $component-border-color;
+      dd {
+        > a {
+          border: 0px;
+        }
+      }
+    }
+  }
+}
+
+/*Tables*/
+
+table {
+  border-collapse: collapse;
+  border-width: 0px;
+  border-color: $component-border-color;
+  background: $component-bg-color;
+  &.bordered {
+    border-width: 1px;
+    thead {
+      th {
+        border-bottom-color: $component-border-color;
+      }
+    }
+  }
+  thead {
+    background: transparent;
+    th {
+      border-bottom: 0px solid $component-bg-color-hover;
+      color: $body-font-color;
+    }
+  }
+  tr td, thead tr th {
+    padding: .5rem 1rem;
+  }
+  thead tr th {
+    color: $component-alt-font-color;
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+  tr.even, tr.alt, tr:nth-of-type(even) {
+    background: transparent;
+  }
+  tr {
+    @include single-transition(background-color);
+    &:hover {
+      td {
+        background-color: #fff;
+      }
+    }
+    td {
+      font-weight: lighter;
+      color: $component-sub-font-color;
+      font-size: .875rem;
+      border-top: 1px solid $input-sub-bg-color;
+      line-height: 1.7143em;
+      background-color: $component-bg-color-hover;
+    }
+    &:last-child {
+      td {
+        border-bottom: 0px;
+      }
+    }
+  }
+}
+
+table thead tr th,
+table tfoot tr th,
+table tfoot tr td,
+table tbody tr th,
+table tbody tr td,
+table tr td {
+  line-height: 1.45rem;
+}
+
+/*Thumbnails*/
+.th {
+  box-shadow: 0 0 0 1px $component-border-color;
+  -webkit-box-shadow: 0 0 0 1px $component-border-color;
+  @include radius(.25rem);
+}
+
+/*Topbar*/
+
+.top-bar-section {
+  .divider {
+    border-top: solid 1px $component-sub-bg-color;
+  }
+  .dropdown {
+    border-bottom: 1px solid $component-border-color;
+    li {
+      &:not(.has-form){
+        &:hover {
+          > a {
+            &:not(.button){
+              background: $component-bg-color-hover;
+              background-color: $component-bg-color-hover;
+              color: $body-font-color;
+            }
+          }
+        }
+      }
+      label {
+        padding: .5rem 1rem;
+      }
+    }
+  }
+}
+
+/*Vcard*/
+.vcard {
+  background-color: $component-bg-color;
+  border: 0px;
+  &.bordered {
+    border-width: 1px;
+    border-color: $component-border-color;
+  }
+}
+
+/*End alphabetical order*/

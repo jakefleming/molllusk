@@ -1,15 +1,17 @@
 /*Reusable equations & numbers*/
-$space-xs:  (1rem / 4);
-$space-s:   (1rem / 2);
-$space-m:   (1rem);
-$space-l:   (1rem * 2);
-$space-xl:  (1rem * 4);
+$zero: 0!important;
 
-$font-xs:  (1rem / 1.3);
-$font-s:   (1rem / 1.15);
-$font-m:   (1rem);
-$font-l:   (1rem * 1.25);
-$font-xl:  (1rem * 1.5);
+$space-xs:  (1rem / 4)!important;
+$space-s:   (1rem / 2)!important;
+$space-m:   (1rem)!important;
+$space-l:   (1rem * 2)!important;
+$space-xl:  (1rem * 4)!important;
+
+$font-xs:  (1rem / 1.3)!important;
+$font-s:   (1rem / 1.15)!important;
+$font-m:   (1rem)!important;
+$font-l:   (1rem * 1.25)!important;
+$font-xl:  (1rem * 1.5)!important;
 
 
 /*Font sizes*/
@@ -23,35 +25,35 @@ $font-xl:  (1rem * 1.5);
 
 /*Margins*/
 
-.man    {margin: 0}
+.man    {margin: $zero}
 .maxs   {margin: $space-xs}
 .mas    {margin: $space-s}
 .mam    {margin: $space-m}
 .mal    {margin: $space-l}
 .maxl   {margin: $space-xl}
 
-.mtn    {margin-top: 0}
+.mtn    {margin-top: $zero}
 .mtxs   {margin-top: $space-xs}
 .mts    {margin-top: $space-s}
 .mtm    {margin-top: $space-m}
 .mtl    {margin-top: $space-l}
 .mtxl   {margin-top: $space-xl}
 
-.mrn    {margin-right: 0}
+.mrn    {margin-right: $zero}
 .mrxs   {margin-right: $space-xs}
 .mrs    {margin-right: $space-s}
 .mrm    {margin-right: $space-m}
 .mrl    {margin-right: $space-l}
 .mrxl   {margin-right: $space-xl}
 
-.mbn    {margin-bottom: 0}
+.mbn    {margin-bottom: $zero}
 .mbxs   {margin-bottom: $space-xs}
 .mbs    {margin-bottom: $space-s}
 .mbm    {margin-bottom: $space-m}
 .mbl    {margin-bottom: $space-l}
 .mbxl   {margin-bottom: $space-xl}
 
-.mln    {margin-left: 0}
+.mln    {margin-left: $zero}
 .mlxs   {margin-left: $space-xs}
 .mls    {margin-left: $space-s}
 .mlm    {margin-left: $space-m}
@@ -60,37 +62,144 @@ $font-xl:  (1rem * 1.5);
 
 /*Padding*/
 
-.pan    {padding: 0}
+.pan    {padding: $zero}
 .paxs   {padding: $space-xs}
 .pas    {padding: $space-s}
 .pam    {padding: $space-m}
 .pal    {padding: $space-l}
 .paxl   {padding: $space-xl}
 
-.ptn    {padding-top: 0}
+.ptn    {padding-top: $zero}
 .ptxs   {padding-top: $space-xs}
 .pts    {padding-top: $space-s}
 .ptm    {padding-top: $space-m}
 .ptl    {padding-top: $space-l}
 .ptxl   {padding-top: $space-xl}
 
-.prn    {padding-right: 0}
+.prn    {padding-right: $zero}
 .prxs   {padding-right: $space-xs}
 .prs    {padding-right: $space-s}
 .prm    {padding-right: $space-m}
 .prl    {padding-right: $space-l}
 .prxl   {padding-right: $space-xl}
 
-.pbn    {padding-bottom: 0}
+.pbn    {padding-bottom: $zero}
 .pbxs   {padding-bottom: $space-xs}
 .pbs    {padding-bottom: $space-s}
 .pbm    {padding-bottom: $space-m}
 .pbl    {padding-bottom: $space-l}
 .pbxl   {padding-bottom: $space-xl}
 
-.pln    {padding-left: 0}
+.pln    {padding-left: $zero}
 .plxs   {padding-left: $space-xs}
 .pls    {padding-left: $space-s}
 .plm    {padding-left: $space-m}
 .pll    {padding-left: $space-l}
 .plxl   {padding-left: $space-xl}
+
+/*transitions*/
+@mixin transitionAll {
+  -webkit-transition: all ease .2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+/*overflow*/
+@mixin dots {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dots {
+  @include dots;
+}
+
+/*rotate*/
+@mixin rotate45 {
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg); /* IE 9 */
+  -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+}
+
+@mixin rotate90 {
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */
+}
+
+.rotate45 {
+  @include rotate45;
+}
+
+.rotate45 {
+  @include rotate90;
+}
+
+@mixin rotate180 {
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg); /* IE 9 */
+  -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+}
+
+@mixin rotate270 {
+  transform:rotate(270deg);
+  -ms-transform:rotate(270deg); /* IE 9 */
+  -webkit-transform:rotate(270deg); /* Opera, Chrome, and Safari */
+}
+
+.rotate270 {
+  @include rotate270;
+}
+
+.rotate180 {
+  @include rotate180;
+}
+
+/*Widths*/
+
+.widthFull {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*text*/
+
+.text-faded {
+  color: $input-icon-color;
+  font-weight: 300;
+}
+
+/*display*/
+
+.inline-block {
+  display: inline-block;
+}
+
+/*cursor*/
+
+.pointer {
+  cursor: pointer;
+}
+
+/*misc*/
+
+.ptwe {
+  max-width: 95%;
+  @media only screen and (max-width: 120rem) {
+    max-width: 95%;
+  }
+  @media only screen and (max-width: 90rem) {
+    max-width: 88%;
+  }
+  @media only screen and (max-width: 64rem) {
+    max-width: 76%;
+  }
+  @media only screen and (max-width: 56rem) {
+    max-width: 70%;
+  }
+  @media only screen and (max-width: 42rem) {
+    max-width: 90%;
+  }
+}

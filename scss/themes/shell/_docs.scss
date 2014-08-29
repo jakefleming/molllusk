@@ -1,0 +1,47 @@
+/*Docs component*/
+.docs-component {
+  background: #fff;
+  margin-top: $space-m;
+  @include radius($global-radius);
+  > div {
+    &:last-child {
+      border-bottom-left-radius: $global-radius;
+      -webkit-border-bottom-left-radius: $global-radius;
+      border-bottom-right-radius: $global-radius;
+      -webkit-border-bottom-right-radius: $global-radius;
+    }
+  }
+  &.code-snippet {
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+.docs-component-example, .docs-component-body, .docs-component-header {
+  padding: 1rem;
+}
+.docs-component-example {
+  background-color: $component-sub-bg-color;
+}
+.docs-component-header {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+
+/*Fixing sticky nav*/
+.sticky.fixed {
+  top: 32px;
+}
+
+/*Code pretty*/
+.line-data {
+  font-size: .75rem;
+  overflow: auto;
+}
+.nt {color: $component-sub-font-color}
+.na {color: $primary-color}
+.s  {color: $alert-color}
+
+

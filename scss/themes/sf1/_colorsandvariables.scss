@@ -1,0 +1,193 @@
+$base-font-size: 16px;
+$body-font-family: "ProximaNovaSoft","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$global-radius: .25rem;
+$body-font-weight: 300;
+
+/*Primary theme colors*/
+$primary-color: #2A94D6;
+
+@import "../scss/other/colorPaletteGenerator"; //comment this out if using below palette
+
+/*State colors - Changes these depending on primary color*/
+$secondary-color: $cp-2;
+$alert-color: $cp-6;
+$success-color: $cp-5;
+$warning-color: $cp-7;
+$info-color: $cp-8;
+
+$widget-font-color: adjust-color($body-font-color, $hue: -8, $saturation: -31, $lightness: 18); //202, 4%, 43% - #696e71
+
+$primary-color-darker: adjust-color($primary-color, $saturation: 14, $lightness: -9); //203, 82%, 41% - #137cbd
+
+$component-font-color: adjust-color($body-font-color, $saturation: -33, $lightness: -1); //210, 2%, 24% - #3c3d3e
+$component-bg-color: $cp-2;
+$component-bg-color-hover: #f5f6f7;
+$component-border-color: #dadee2;
+$component-dark-bg-color: adjust-color($cp-4, $saturation: 6, $lightness: -4); //210, 35%, 25% - #2a4158
+$component-dark-font-color: #fff;
+$component-sub-bg-color: #f0f1f2;
+$component-sub-font-color: adjust-color($body-font-color, $saturation: -20, $lightness: 22 ); //210, 15%, 47% - #66788a
+$component-alt-font-color: adjust-color($body-font-color, $saturation: -13, $lightness: 11 ); //210, 22%, 36% #485c70
+
+$input-bg-color: #fff;
+$input-box-shadow: none;
+$input-border-color: $component-border-color;
+$input-focus-bg-color: $component-bg-color-hover;
+$input-focus-border-color: $component-border-color;
+$input-include-glowing-effect: false;
+$input-sub-bg-color: #e8eaeb;
+$input-sub-focus-bg-color: #fff;
+$input-placeholder-color: #66788a;
+$input-icon-color: #9faab5;
+
+.text-color-faded {color: adjust-color($body-font-color, $saturation: -12, $lightness: 37);} // 210, 13%, 67% - #9faab5 - 210, 35%, 25%
+.text-color-light {color: $cp-2;}
+.text-color-normal {color:$body-font-color;}
+
+$switch-bg: $component-sub-bg-color;
+$switch-active-color: $primary-color;
+$switch-height-tny: 1.5rem;
+$switch-height-sml: 2rem;
+$switch-height-med: 2.5rem;
+$switch-height-lrg: 3.5rem;
+
+$radio-checkbox-size: 1.5rem;
+
+$tooltip-bg: adjust-color($primary-color, $hue: 6, $saturation: -39, $lightness: -21); // 209, 29%, 29% #344a5f - 203, 68%, 50%
+$tooltip-close-font-color: #fff;
+
+$bg-1: $component-bg-color;
+$bg-2: $component-bg-color-hover;
+$bg-3: $component-sub-bg-color;
+$bg-4: $component-dark-bg-color;
+$bg-1-98p: darken($component-bg-color, 2%);
+
+.bg-1 {background-color: $bg-1}
+.bg-2 {background-color: $bg-2}
+.bg-3 {background-color: $bg-3}
+.bg-4 {background-color: $bg-4}
+
+.bg-cp-1 {background-color:$cp-1};
+.bg-cp-2 {background-color:$cp-2};
+.bg-cp-3 {background-color:$cp-3};
+.bg-cp-4 {background-color:$cp-4};
+.bg-cp-5 {background-color:$cp-5};
+.bg-cp-6 {background-color:$cp-6};
+.bg-cp-7 {background-color:$cp-7};
+.bg-cp-8 {background-color:$cp-8};
+.bg-cp-9 {background-color:$cp-9};
+.bg-cp-10 {background-color:$cp-10};
+.bg-cp-11 {background-color:$cp-11};
+.bg-cp-12 {background-color:$cp-12};
+.bg-cp-13 {background-color:$cp-13};
+.bg-cp-14 {background-color:$cp-14};
+.bg-cp-15 {background-color:$cp-15};
+.bg-cp-16 {background-color:$cp-16};
+.bg-cp-17 {background-color:$cp-17};
+.bg-cp-18 {background-color:$cp-18};
+.bg-cp-19 {background-color:$cp-19};
+.bg-cp-20 {background-color:$cp-20};
+.bg-cp-21 {background-color:$cp-21};
+.bg-cp-22 {background-color:$cp-22};
+.bg-cp-23 {background-color:$cp-23};
+.bg-cp-24 {background-color:$cp-24};
+.bg-cp-25 {background-color:$cp-25};
+.bg-cp-26 {background-color:$cp-26};
+.bg-cp-27 {background-color:$cp-27};
+.bg-cp-28 {background-color:$cp-28};
+.bg-cp-29 {background-color:$cp-29};
+.bg-cp-30 {background-color:$cp-30};
+.bg-cp-31 {background-color:$cp-31};
+.bg-cp-32 {background-color:$cp-32};
+.bg-cp-33 {background-color:$cp-33};
+.bg-cp-34 {background-color:$cp-34};
+.bg-cp-35 {background-color:$cp-35};
+.bg-cp-36 {background-color:$cp-36};
+.bg-cp-37 {background-color:$cp-37};
+.bg-cp-38 {background-color:$cp-38};
+.bg-cp-39 {background-color:$cp-39};
+.bg-cp-40 {background-color:$cp-40};
+.bg-cp-41 {background-color:$cp-41};
+.bg-cp-42 {background-color:$cp-42};
+.bg-cp-43 {background-color:$cp-43};
+.bg-cp-44 {background-color:$cp-44};
+.bg-cp-45 {background-color:$cp-45};
+.bg-cp-46 {background-color:$cp-46};
+.bg-cp-47 {background-color:$cp-47};
+.bg-cp-48 {background-color:$cp-48};
+.bg-cp-49 {background-color:$cp-49};
+.bg-cp-50 {background-color:$cp-50};
+.bg-cp-51 {background-color:$cp-51};
+.bg-cp-52 {background-color:$cp-52};
+.bg-cp-53 {background-color:$cp-53};
+.bg-cp-54 {background-color:$cp-54};
+.bg-cp-55 {background-color:$cp-55};
+.bg-cp-56 {background-color:$cp-56};
+.bg-cp-57 {background-color:$cp-57};
+.bg-cp-58 {background-color:$cp-58};
+.bg-cp-59 {background-color:$cp-59};
+.bg-cp-60 {background-color:$cp-60};
+.bg-cp-61 {background-color:$cp-61};
+.bg-cp-62 {background-color:$cp-62};
+
+@mixin border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+/*Reformatting topbar variables*/
+// Background color for the top bar
+$topbar-bg-color: $component-dark-bg-color;
+$topbar-bg: $topbar-bg-color;
+
+// Height and margin
+$topbar-height: 56px;
+$topbar-margin-bottom: 0;
+
+// Controlling the styles for the title in the top bar
+$topbar-title-weight: 300;
+$topbar-title-font-size: 1.375rem;
+
+// Style the top bar dropdown elements
+$topbar-dropdown-bg: $component-bg-color;
+$topbar-dropdown-link-color: $component-font-color;
+$topbar-dropdown-link-bg: $component-bg-color;
+$topbar-dropdown-link-weight: 300;
+$topbar-dropdown-toggle-size: 5px;
+$topbar-dropdown-toggle-color: $component-dark-font-color;
+$topbar-dropdown-toggle-alpha: 0.4;
+
+// Set the link colors and styles for top-level nav
+$topbar-link-color: $component-dark-font-color;
+$topbar-link-color-hover: $component-dark-font-color;
+$topbar-link-color-active: $component-dark-font-color;
+$topbar-link-color-active-hover: $component-dark-font-color;
+$topbar-link-weight: 300;
+$topbar-link-font-size: rem-calc(13);
+$topbar-link-hover-lightness: -10%; // Darken by 10%
+$topbar-link-bg: $topbar-bg;
+$topbar-link-bg-color-hover: $topbar-bg-color;
+$topbar-link-bg-hover: $topbar-bg-color;
+$topbar-link-bg-active: $primary-color;
+$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-font-family: $body-font-family;
+$topbar-link-text-transform: none;
+$topbar-link-padding: $topbar-height / 3;
+
+$topbar-button-font-size: 0.75rem;
+$topbar-button-top: 7px;
+
+$topbar-dropdown-label-color: $component-font-color;
+$topbar-dropdown-label-text-transform: uppercase;
+$topbar-dropdown-label-font-weight: 300;
+$topbar-dropdown-label-font-size: rem-calc(8);
+$topbar-dropdown-label-bg: $component-sub-bg-color;
+
+// Top menu icon styles
+$topbar-menu-link-transform: uppercase;
+$topbar-menu-link-font-size: rem-calc(12);
+$topbar-menu-link-weight: 300;
+$topbar-menu-link-color: $component-dark-font-color;
+$topbar-menu-icon-color: $component-dark-font-color;
+$topbar-menu-link-color-toggled: darken($component-dark-font-color, 10%);
+$topbar-menu-icon-color-toggled: darken($component-dark-font-color, 10%);

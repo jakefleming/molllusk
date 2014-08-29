@@ -1,0 +1,153 @@
+/*typeahead*/
+
+.twitter-typeahead {
+  width: 100%;
+}
+
+input.tt-input {
+  backgrond-color: transparent;
+  color: $input-font-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $input-border-color;
+  &.borderless {
+    border-width: 0px;
+  }
+}
+
+input.tt-hint {
+  backgrond-color: $input-bg-color;
+  color: $input-font-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  &:focus {
+    background-color: $input-focus-bg-color;
+  }
+}
+
+.tt-dropdown-menu {
+  background-color: #fff;
+  @include border;
+  border-color: $component-border-color;
+  width: 100%;
+  @include radius($global-radius);
+  h1,h2,h3,h4,h5,h6 {
+    padding: .5rem 1rem;
+    display: block;
+    margin: 0px;
+    font-size: .75em;
+    color: $input-icon-color;
+    text-transform: uppercase;
+    display: block;
+    padding: .5rem 1rem;
+    font-weight: lighter;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #f5f6f7;
+    background: transparent;
+    line-height: 1rem;
+    min-height: 0px;
+    &:hover {
+      background: transparent;
+      cursor: initial;
+    }
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    border-color: transparent transparent white transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    z-index: 99;
+  }
+  [class*='tt-dataset-'] {
+    margin-bottom: .5rem;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 7px;
+    border-color: transparent transparent $component-border-color transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    top: -14px;
+    left: 9px;
+    z-index: 98;
+  }
+}
+
+.tt-suggestion {
+  padding: .75rem 1rem;
+  color: $component-alt-font-color;
+  @include dots;
+  line-height: 1.5;
+  p {
+    margin-bottom: 0;
+    line-height: 1rem;
+    font-size: 1rem;
+  }
+  strong {
+    background-color: transparent;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+}
+
+.tt-suggestion.tt-cursor, .tt-suggestion:hover {
+  background-color: $component-bg-color-hover;
+  cursor: pointer;
+}
+
+.triggered-events {
+  float: right;
+}
+
+.nomatch {
+  color: #cfd0d2;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.match {
+  color: $body-font-color;
+  margin-left: 10px;
+  font-size: 14px;
+  strong {
+    background-color: transparent;
+    font-weight: normal;
+    font-decoration: underline;
+  }
+}
+
+.match-category {
+  font-size: 12px;
+  font-style: italic;
+  color: #cfd0d2;
+  margin-left: 10px;
+  min-height: 0px;
+  display: block;
+  margin-top: 5px;
+  strong {
+    background-color: #ffec70;
+    font-weight: normal;
+  }
+}
+
+.field-header {
+  margin-left: 10px;
+  color: #333;
+}
+
+.field-footer {
+  border: 1px solid #333;
+}

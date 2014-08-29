@@ -1,0 +1,603 @@
+/*Variables*/
+$chart-tick-color: adjust-color($body-font-color, $hue: -9, $saturation: -14, $lightness: 53); // 201, 21%, 78% - #BCCBD3 - 210, 35%, 25%
+
+$chart-color-saturation: -15;
+$chart-color-lightness: 2;
+$chart-color-hue: -200;
+
+$chart-color-1: $cp-1;
+$chart-color-2: $cp-25;
+$chart-color-3: $cp-45;
+$chart-color-4: $cp-55;
+$chart-color-5: $cp-59;
+
+$chart-color-6: adjust-color($chart-color-1, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-7: adjust-color($chart-color-2, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-8: adjust-color($chart-color-3, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-9: adjust-color($chart-color-4, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-10: adjust-color($chart-color-5, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+
+$chart-color-11: adjust-color($chart-color-6, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-12: adjust-color($chart-color-7, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-13: adjust-color($chart-color-8, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-14: adjust-color($chart-color-9, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-15: adjust-color($chart-color-10, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+
+$chart-color-16: adjust-color($chart-color-11, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-17: adjust-color($chart-color-12, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-18: adjust-color($chart-color-13, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-19: adjust-color($chart-color-14, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+$chart-color-20: adjust-color($chart-color-15, $hue: $chart-color-hue, $lightness: $chart-color-lightness, $saturation: $chart-color-saturation);
+
+.bg-chart-color-1 {
+  background-color: $chart-color-1;
+}
+.bg-chart-color-2 {
+  background-color: $chart-color-2;
+}
+.bg-chart-color-3 {
+  background-color: $chart-color-3;
+}
+.bg-chart-color-4 {
+  background-color: $chart-color-4;
+}
+.bg-chart-color-5 {
+  background-color: $chart-color-5;
+}
+.bg-chart-color-6 {
+  background-color: $chart-color-6;
+}
+.bg-chart-color-7 {
+  background-color: $chart-color-7;
+}
+.bg-chart-color-8 {
+  background-color: $chart-color-8;
+}
+.bg-chart-color-9 {
+  background-color: $chart-color-9;
+}
+.bg-chart-color-10 {
+  background-color: $chart-color-10;
+}
+.bg-chart-color-11 {
+  background-color: $chart-color-11;
+}
+.bg-chart-color-12 {
+  background-color: $chart-color-12;
+}
+.bg-chart-color-13 {
+  background-color: $chart-color-13;
+}
+.bg-chart-color-14 {
+  background-color: $chart-color-14;
+}
+.bg-chart-color-15 {
+  background-color: $chart-color-15;
+}
+.bg-chart-color-16 {
+  background-color: $chart-color-16;
+}
+.bg-chart-color-17 {
+  background-color: $chart-color-17;
+}
+.bg-chart-color-18 {
+  background-color: $chart-color-18;
+}
+.bg-chart-color-19 {
+  background-color: $chart-color-19;
+}
+.bg-chart-color-20 {
+  background-color: $chart-color-20;
+}
+
+/* D3 */
+.circle {
+  stroke-width: 2px;
+  stroke: black;
+  stroke-opacity: 0.2;
+}
+
+tr .bar {
+  fill: $primary-color-faded;
+  -webkit-transition: all ease .2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease .2s
+}
+
+tr:hover .bar {
+  fill: $cp-1;
+}
+
+.bar:hover {
+  opacity: 0.75;
+}
+
+text {
+  fill: $body-font-color;
+  font-family: "ProximaNovaSoft","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
+}
+
+.bar-text {
+  font-size: 12px;
+}
+
+.y-label {
+  cursor: pointer;
+}
+
+.axis text {
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: $chart-tick-color;
+  shape-rendering: crispEdges;
+}
+
+.area0 {
+  stroke-width: 0;
+  fill: rgba(0,0,0,.7);
+}
+
+.area1 {
+  stroke-width: 0;
+  fill: rgba(180, 197, 227,.7);
+
+}
+
+.area2 {
+  stroke-width: 0;
+  fill: rgba(201,227,180, .7);
+}
+
+.chart-tooltip {
+  font-family: $body-font-family;
+  position: absolute;
+  min-width: 100px;
+  max-width: 320px;
+  height: auto;
+  padding: 16px;
+  background-color: $body-font-color;
+  @include radius($global-radius);
+  pointer-events: none;
+}
+
+.chart-tooltip p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+  font-family: $body-font-family;
+  font-weight: 300;
+  strong {
+    font-weight: 700;
+  }
+}
+
+.chart-tooltip.hidden {
+  display: none;
+}
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.8;}
+
+.panel, .custom-panel {
+  .color-group {
+    .area {
+      fill: #ced9e0;
+      fill-opacity: .17;
+      stroke-width: 0;
+    }
+    .line {
+      stroke: #ced9e0;
+      stroke-width: 2;
+    }
+    .chart-hover-circle {
+      fill: #ced9e0;
+    }
+  }
+  &:hover {
+    .color-group {
+      .area {
+        @include transitionAll;
+        fill: $chart-color-1;
+      }
+      .line {
+        @include transitionAll;
+        stroke: $chart-color-1;
+      }
+      .chart-hover-circle {
+        @include transitionAll;
+        fill: $chart-color-1;
+      }
+      &:nth-child(2) {
+        .area {
+          fill: $chart-color-2;
+        }
+        .line {
+          stroke: $chart-color-2;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-2;
+        }
+      }
+      &:nth-child(3) {
+        .area {
+          fill: $chart-color-3;
+        }
+        .line {
+          stroke: $chart-color-3;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-3;
+        }
+      }
+      &:nth-child(4) {
+        .area {
+          fill: $chart-color-4;
+        }
+        .line {
+          stroke: $chart-color-4;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-4;
+        }
+      }
+      &:nth-child(5) {
+        .area {
+          fill: $chart-color-5;
+        }
+        .line {
+          stroke: $chart-color-5;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-5;
+        }
+      }
+      &:nth-child(6) {
+        .area {
+          fill: $chart-color-6;
+        }
+        .line {
+          stroke: $chart-color-6;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-6;
+        }
+      }
+      &:nth-child(7) {
+        .area {
+          fill: $chart-color-7;
+        }
+        .line {
+          stroke: $chart-color-7;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-7;
+        }
+      }
+      &:nth-child(8) {
+        .area {
+          fill: $chart-color-8;
+        }
+        .line {
+          stroke: $chart-color-8;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-8;
+        }
+      }
+      &:nth-child(9) {
+        .area {
+          fill: $chart-color-9;
+        }
+        .line {
+          stroke: $chart-color-9;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-9;
+        }
+      }
+      &:nth-child(10) {
+        .area {
+          fill: $chart-color-10;
+        }
+        .line {
+          stroke: $chart-color-10;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-10;
+        }
+      }
+      &:nth-child(11) {
+        .area {
+          fill: $chart-color-11;
+        }
+        .line {
+          stroke: $chart-color-11;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-11;
+        }
+      }
+      &:nth-child(12) {
+        .area {
+          fill: $chart-color-12;
+        }
+        .line {
+          stroke: $chart-color-12;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-12;
+        }
+      }
+      &:nth-child(13) {
+        .area {
+          fill: $chart-color-13;
+        }
+        .line {
+          stroke: $chart-color-13;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-13;
+        }
+      }
+      &:nth-child(14) {
+        .area {
+          fill: $chart-color-14;
+        }
+        .line {
+          stroke: $chart-color-14;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-14;
+        }
+      }
+      &:nth-child(15) {
+        .area {
+          fill: $chart-color-15;
+        }
+        .line {
+          stroke: $chart-color-15;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-15;
+        }
+      }
+      &:nth-child(16) {
+        .area {
+          fill: $chart-color-16;
+        }
+        .line {
+          stroke: $chart-color-16;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-16;
+        }
+      }
+      &:nth-child(17) {
+        .area {
+          fill: $chart-color-17;
+        }
+        .line {
+          stroke: $chart-color-17;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-17;
+        }
+      }
+      &:nth-child(18) {
+        .area {
+          fill: $chart-color-18;
+        }
+        .line {
+          stroke: $chart-color-18;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-18;
+        }
+      }
+      &:nth-child(19) {
+        .area {
+          fill: $chart-color-19;
+        }
+        .line {
+          stroke: $chart-color-19;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-19;
+        }
+      }
+      &:nth-child(20) {
+        .area {
+          fill: $chart-color-20;
+        }
+        .line {
+          stroke: $chart-color-20;
+        }
+        .chart-hover-circle {
+          fill: $chart-color-20;
+        }
+      }
+    }
+  }
+}
+
+.panel, .custom-panel {
+  .legend-items {
+    g {
+      circle {
+        fill: $primary-color-faded;
+        stroke-width: 0;
+      }
+      &.item-disabled {
+        circle {
+          fill: $primary-color-faded!important;
+          stroke-width: 0;
+        }
+        text {
+          fill: $primary-color-faded;
+        }
+      }
+    }
+  }
+  &:hover {
+    .legend-items {
+      circle {
+        @include transitionAll;
+        fill: $chart-color-1;
+      }
+      g {
+        circle {
+          fill: $chart-color-1;
+        }
+        &:nth-child(2) {
+          circle {
+            fill: $chart-color-2;
+          }
+        }
+        &:nth-child(3) {
+          circle {
+            fill: $chart-color-3;
+          }
+        }
+        &:nth-child(4) {
+          circle {
+            fill: $chart-color-4;
+          }
+        }
+        &:nth-child(5) {
+          circle {
+            fill: $chart-color-5;
+          }
+        }
+        &:nth-child(6) {
+          circle {
+            fill: $chart-color-6;
+          }
+        }
+        &:nth-child(7) {
+          circle {
+            fill: $chart-color-7;
+          }
+        }
+        &:nth-child(8) {
+          circle {
+            fill: $chart-color-8;
+          }
+        }
+        &:nth-child(9) {
+          circle {
+            fill: $chart-color-9;
+          }
+        }
+        &:nth-child(10) {
+          circle {
+            fill: $chart-color-10;
+          }
+        }
+        &:nth-child(11) {
+          circle {
+            fill: $chart-color-11;
+          }
+        }
+        &:nth-child(12) {
+          circle {
+            fill: $chart-color-12;
+          }
+        }
+        &:nth-child(13) {
+          circle {
+            fill: $chart-color-13;
+          }
+        }
+        &:nth-child(14) {
+          circle {
+            fill: $chart-color-14;
+          }
+        }
+        &:nth-child(15) {
+          circle {
+            fill: $chart-color-15;
+          }
+        }
+        &:nth-child(16) {
+          circle {
+            fill: $chart-color-16;
+          }
+        }
+        &:nth-child(17) {
+          circle {
+            fill: $chart-color-17;
+          }
+        }
+        &:nth-child(18) {
+          circle {
+            fill: $chart-color-18;
+          }
+        }
+        &:nth-child(19) {
+          circle {
+            fill: $chart-color-19;
+          }
+        }
+        &:nth-child(20) {
+          circle {
+            fill: $chart-color-20;
+          }
+        }
+      }
+    }
+  }
+}
+
+.panel, .custom-panel {
+  tr {
+    .color-group {
+      .area {
+        fill: $primary-color-faded!important;
+        fill-opacity: .17;
+        stroke-width: 0;
+      }
+      .line {
+        stroke: $primary-color-faded!important;
+        stroke-width: 2;
+      }
+    }
+    &:hover {
+      .color-group {
+        .area {
+          @include transitionAll;
+          fill: $chart-color-1!important;
+        }
+        .line {
+          @include transitionAll;
+          stroke: $chart-color-1!important;
+        }
+      }
+    }
+  }
+}
+
+.legend {
+  rect {
+    fill: white;
+    stroke: $primary-color-faded;
+    opacity: 0.8;
+  }
+}
+
+.dashed-line {
+  stroke-dasharray: 10, 5;
+  stroke: rgba(0,0,0,.3);
+  stroke-width: 2;
+}
+
+.chart-hover-circle {
+  fill: $chart-color-1;
+}

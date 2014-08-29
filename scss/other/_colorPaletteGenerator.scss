@@ -1,0 +1,144 @@
+/*Optimized for blue as primary (#2A94D6) Works with some other blues too / sf1 */
+
+
+
+
+$body-font-color: #2a4158;
+$primary-color-faded: #ced9e0;
+/*main*/
+$cp-1: #2A94D6;
+$cp-2: #fff;
+$cp-3: #F0F1F2;
+$cp-4: #34495E;
+/*notification*/ //203, 68%, 50%
+$cp-5: #43b66a;
+$cp-6: #c06057;
+$cp-7: #e6b739;
+$cp-8: #65cae4;
+/*secondary*/ //203, 68%, 50%
+$cp-9: #4EB1CB;
+$cp-10: #CF5C60;
+$cp-11: #717ECD;
+$cp-12: #4AB471;
+$cp-13: #F3AE4E;
+$cp-14: #D96383;
+/*tertiary*/
+$cp-15: #e1d951;
+$cp-16: #cfd05b;
+$cp-17: #c8ca58;
+$cp-18: #cfd05c;
+$cp-19: #bdd25f;
+$cp-20: #acd360;
+$cp-21: #9fdb66;
+$cp-22: #83c75e;
+$cp-23: #97cf5d;
+$cp-24: #89c059;
+$cp-25: #54c473;
+$cp-26: #4dca76;
+$cp-27: #38c393;
+$cp-28: #4fbe75;
+$cp-29: #6b9ee1;
+$cp-30: #7698f0;
+$cp-31: #3cc2b3;
+$cp-32: #50ceb9;
+$cp-33: #3abeb1;
+$cp-34: #48c7c8;
+$cp-35: #43b5b5;
+$cp-36: #53b6d7;
+$cp-37: #5ab0d2;
+$cp-38: #517e82;
+$cp-39: #439cba;
+$cp-40: #6b9ee2;
+$cp-41: #7f93f9;
+$cp-42: #6a89e5;
+$cp-43: #6488e3;
+$cp-44: #8a7aed;
+$cp-45: #8b85f9;
+$cp-46: #8c89f2;
+$cp-47: #8784ea;
+$cp-48: #d472d4;
+$cp-49: #b070e6;
+$cp-50: #e46fbe;
+$cp-51: #dc71d1;
+$cp-52: #df6184;
+$cp-53: #e56798;
+$cp-54: #eb687f;
+$cp-55: #e9637e;
+$cp-56: #ff7b84;
+$cp-57: #f77e75;
+$cp-58: #ecb46c;
+$cp-59: #f59f71;
+$cp-60: #d58a6a;
+$cp-61: #bf7b66;
+$cp-62: #904d4c;
+
+
+
+$body-font-color: adjust-color($primary-color, $hue: 7, $saturation: -33, $lightness: -25);//210, 35%, 25% - #2a4158
+$primary-color-faded: adjust-color($primary-color, $saturation: -46, $lightness: 34 ); // 203, 22%, 84% - #ced9e0 - 203, 68%, 50%
+/*main*/
+$cp-1: $primary-color; // 203, 68%, 50% - #2A94D6
+$cp-2: #fff;
+$cp-3: adjust-color($cp-2, $hue: -210, $saturation: -97, $lightness: -5); //210, 7%, 95% - #F0F1F2
+$cp-4: adjust-color($primary-color, $hue: 7, $saturation: -39, $lightness: -21); //210, 29%, 29% - #34495E
+/*notification*/ //203, 68%, 50%
+$cp-5: adjust-color($primary-color, $hue: -63, $saturation: -22, $lightness: -1); //140, 46%, 49% - #43b66a
+$cp-6: adjust-color($primary-color, $hue: -198, $saturation: -23, $lightness: 5); //5, 45%, 55% - #c06057
+$cp-7: adjust-color($primary-color, $hue: -159, $saturation: 10, $lightness: 6); //44, 78%, 56% - #e6b739
+$cp-8: adjust-color($primary-color, $hue: -11, $saturation: 2, $lightness: 15); //192, 70%, 65% - #65cae4
+/*secondary*/ //203, 68%, 50%
+$cp-9: adjust-color($primary-color, $hue: -9, $saturation: 2, $lightness: 15); //192, 70%, 65% - #4EB1CB
+$cp-10: adjust-color($primary-color, $hue: 155, $saturation: 6, $lightness: 16); //358, 74%, 66% - #CF5C60
+$cp-11: adjust-color($primary-color, $hue: 28, $saturation: -6, $lightness: 19); //231, 62%, 69% - #717ECD
+$cp-12: adjust-color($primary-color, $hue: -61, $saturation: -20, $lightness: 2); //142, 48%, 52% - #4AB471
+$cp-13: adjust-color($primary-color, $hue: -168, $saturation: 28, $lightness: 17); //35, 96%, 67% - #F3AE4E
+$cp-14: adjust-color($primary-color, $hue: 140, $saturation: 7, $lightness: 18); //343, 75%, 68% - #D96383
+/*tertiary*/
+$cp-15: adjust-color($primary-color, $hue: -146, $saturation: 3, $lightness: 10); //57, 71%, 60% - #e1d951
+$cp-16: adjust-color($primary-color, $hue: -142, $saturation: -13, $lightness:9); //61, 55%, 59% - #cfd05b
+$cp-17: adjust-color($primary-color, $hue: -142, $saturation: -16, $lightness: 7); //61, 52%, 57% - #c8ca58
+$cp-18: adjust-color($primary-color, $hue: -142, $saturation: -13, $lightness: 9); //61, 55%, 59% - #cfd05c
+$cp-19: adjust-color($primary-color, $hue: -132, $saturation: -12, $lightness: 10); //71, 56%, 60% - #bdd25f
+$cp-20: adjust-color($primary-color, $hue: -117, $saturation: -2, $lightness: 13); //80, 57%, 60% - #acd360
+$cp-21: adjust-color($primary-color, $hue: -112, $saturation: -6, $lightness: 13 ); //91, 62%, 63% - #9fdb66
+$cp-22: adjust-color($primary-color, $hue: -104, $saturation: -20, $lightness: 7); //99, 48%, 57% - #83c75e
+$cp-23: adjust-color($primary-color, $hue: -114, $saturation: -14, $lightness: 9); //89, 54%, 59% - #97cf5d
+$cp-24: adjust-color($primary-color, $hue: -111, $saturation: -23, $lightness: 5); //92, 45%, 55% - #89c059
+$cp-25: adjust-color($primary-color, $hue: -66, $saturation: -19, $lightness: 5); //137, 49%, 55% - #54c473
+$cp-26: adjust-color($primary-color, $hue: -63, $saturation: -14, $lightness: 5); //140, 54%, 55% - #4dca76
+$cp-27: adjust-color($primary-color, $hue: -44, $saturation: -13, $lightness: -1); //159, 55%, 49% - #38c393
+$cp-28: adjust-color($primary-color, $hue: -62, $saturation: -22, $lightness: 3); //141, 46%, 53% - #4fbe75
+$cp-29: adjust-color($primary-color, $hue: -70, $saturation: 7, $lightness: 16); //33, 75%, 66% - #e9af67
+$cp-30: adjust-color($primary-color, $hue: -70, $saturation: 7, $lightness: 16); //223, 80%, 70% - #7698f0
+$cp-31: adjust-color($primary-color, $hue: -30, $saturation: -15); //173, 53%, 50% - #3cc2b3
+$cp-32: adjust-color($primary-color, $hue: -33, $saturation: -8, $lightness: 6); //170, 56%, 56% - #50ceb9
+$cp-33: adjust-color($primary-color, $hue: -29, $saturation: -15, $lightness: -1); //174, 53%, 49% - #3abeb1
+$cp-34: adjust-color($primary-color, $hue: -23, $saturation: -14, $lightness: 3); //180, 54%, 53% - #48c7c8
+$cp-35: adjust-color($primary-color, $hue: -23, $saturation: -22, $lightness: -1); //180, 46%, 49% - #43b5b5
+$cp-36: adjust-color($primary-color, $hue: -8, $saturation: -6, $lightness: 8); //195, 62%, 58% - #53b6d7
+$cp-37: adjust-color($primary-color, $hue: -6, $saturation: -11, $lightness: 9); //197, 57%, 59% - #5ab0d2
+$cp-38: adjust-color($primary-color, $hue: -18, $saturation: -35, $lightness: -9); //185, 23%, 41% - #517e82
+$cp-39: adjust-color($primary-color, $hue: -8, $saturation: 11); //195, 47%, 50% - #439cba
+$cp-40: adjust-color($primary-color, $hue: 11, $saturation: -1, $lightness: 15); //214, 67%, 65% - #6b9ee2
+$cp-41: adjust-color($primary-color, $hue: 27, $saturation: 23, $lightness: 24); //230, 91%, 74% - #7f93f9
+$cp-42: adjust-color($primary-color, $hue: 23, $saturation: 2, $lightness: 16); //225, 70%, 66% - #6a89e5
+$cp-43: adjust-color($primary-color, $hue: 20, $saturation: 1, $lightness: 14); //223, 69%, 64% - #6488e3
+$cp-44: adjust-color($primary-color, $hue: 45, $saturation: 8, $lightness: 20); //248, 76%, 70% - #8a7aed
+$cp-45: adjust-color($primary-color, $hue: 40, $saturation: 23, $lightness: 25); //243, 91%, 75% - #8b85f9
+$cp-46: adjust-color($primary-color, $hue: 39, $saturation: 12, $lightness: 24); //242, 80%, 74% - #8c89f2
+$cp-47: adjust-color($primary-color, $hue: 39, $saturation: 3, $lightness: 22); //242, 71%, 72% - #8784ea
+$cp-48: adjust-color($primary-color, $hue: 97, $saturation: -15, $lightness: 14); //300, 53%, 64% - #d472d4
+$cp-49: adjust-color($primary-color, $hue: 70, $saturation: 2, $lightness: 17); //273, 70%, 67% - #b070e6
+$cp-50: adjust-color($primary-color, $hue: 116, $lightness: 16); //319, 68%, 66% - #e46fbe
+$cp-51: adjust-color($primary-color, $hue: 103, $saturation: -8, $lightness: 15); //306, 60%, 65% - #dc71d1
+$cp-52: adjust-color($primary-color, $hue: 140, $saturation: -2, $lightness: 13); //343, 66%, 63% - #df6184
+$cp-53: adjust-color($primary-color, $hue: 134, $saturation: 3, $lightness: 15); //337, 71%, 65% - #e56798
+$cp-54: adjust-color($primary-color, $hue: 146, $saturation: 9, $lightness: 16); //349, 77%, 66% - #eb687f
+$cp-55: adjust-color($primary-color, $hue: 145, $saturation: 7, $lightness: 15); //348, 75%, 65% - #e9637e
+$cp-56: adjust-color($primary-color, $hue: 153, $saturation: 32, $lightness: 24); //356, 100%, 74% - #ff7b84
+$cp-57: adjust-color($primary-color, $hue: -199, $saturation: 21, $lightness: 21); //4, 89%, 71% - #f77e75
+$cp-58: adjust-color($primary-color, $hue: -169, $saturation: 9, $lightness: 17); //34, 77%, 67% - #ecb46c
+$cp-59: adjust-color($primary-color, $hue: -182, $saturation: 19, $lightness: 20); //21, 87%, 70% - #f59f71
+$cp-60: adjust-color($primary-color, $hue: -185, $saturation: -12, $lightness: 13); //18, 56%, 63% - #d58a6a
+$cp-61: adjust-color($primary-color, $hue: -189, $saturation: -27, $lightness: 7); //14, 41%, 57% - #bf7b66
+$cp-62: adjust-color($primary-color, $hue: -202, $saturation: -37, $lightness: -7); //1, 31%, 43% - #904d4c

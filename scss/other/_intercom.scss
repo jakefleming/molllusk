@@ -1,0 +1,506 @@
+body {
+  #IntercomDefaultWidget {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: .75rem;
+    height: auto;
+    width: auto;
+    opacity: .8!important;
+    @include single-transition(opacity);
+    &:hover {
+      opacity: 1!important;
+      background-color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+
+    &:after {
+      font-family: 'icomoon';
+      content: "\e023";
+      font-size: 1.5rem;
+    }
+    span {
+      display: none;
+    }
+  }
+  #IModalOverlay, #IModal, #IModal div, #IModal span, #IModal applet, #IModal object, #IModal iframe, #IModal h1, #IModal h2, #IModal h3, #IModal h4, #IModal h5, #IModal h6, #IModal p, #IModal blockquote, #IModal pre, #IModal a, #IModal abbr, #IModal acronym, #IModal address, #IModal big, #IModal cite, #IModal code, #IModal del, #IModal dfn, #IModal em, #IModal img, #IModal ins, #IModal kbd, #IModal q, #IModal s, #IModal samp, #IModal small, #IModal strike, #IModal strong, #IModal sub, #IModal sup, #IModal tt, #IModal var, #IModal b, #IModal u, #IModal i, #IModal center, #IModal dl, #IModal dt, #IModal dd, #IModal ol, #IModal ul, #IModal li, #IModal fieldset, #IModal form, #IModal div.form, #IModal label, #IModal legend, #IModal table, #IModal caption, #IModal tbody, #IModal tfoot, #IModal thead, #IModal tr, #IModal th, #IModal td, #IModal article, #IModal aside, #IModal canvas, #IModal details, #IModal figcaption, #IModal figure, #IModal footer, #IModal header, #IModal hgroup, #IModal menu, #IModal nav, #IModal section, #IModal summary, #IModal time, #IModal mark, #IModal audio, #IModal video, #IModal button, #IModal textarea, #IModal input, #INotificationMessagesWrapper, #INotificationMessagesWrapper div, #INotificationMessagesWrapper span, #INotificationMessagesWrapper applet, #INotificationMessagesWrapper object, #INotificationMessagesWrapper iframe, #INotificationMessagesWrapper h1, #INotificationMessagesWrapper h2, #INotificationMessagesWrapper h3, #INotificationMessagesWrapper h4, #INotificationMessagesWrapper h5, #INotificationMessagesWrapper h6, #INotificationMessagesWrapper p, #INotificationMessagesWrapper blockquote, #INotificationMessagesWrapper pre, #INotificationMessagesWrapper a, #INotificationMessagesWrapper abbr, #INotificationMessagesWrapper acronym, #INotificationMessagesWrapper address, #INotificationMessagesWrapper big, #INotificationMessagesWrapper cite, #INotificationMessagesWrapper code, #INotificationMessagesWrapper del, #INotificationMessagesWrapper dfn, #INotificationMessagesWrapper em, #INotificationMessagesWrapper img, #INotificationMessagesWrapper ins, #INotificationMessagesWrapper kbd, #INotificationMessagesWrapper q, #INotificationMessagesWrapper s, #INotificationMessagesWrapper samp, #INotificationMessagesWrapper small, #INotificationMessagesWrapper strike, #INotificationMessagesWrapper strong, #INotificationMessagesWrapper sub, #INotificationMessagesWrapper sup, #INotificationMessagesWrapper tt, #INotificationMessagesWrapper var, #INotificationMessagesWrapper b, #INotificationMessagesWrapper u, #INotificationMessagesWrapper i, #INotificationMessagesWrapper center, #INotificationMessagesWrapper dl, #INotificationMessagesWrapper dt, #INotificationMessagesWrapper dd, #INotificationMessagesWrapper ol, #INotificationMessagesWrapper ul, #INotificationMessagesWrapper li, #INotificationMessagesWrapper fieldset, #INotificationMessagesWrapper form, #INotificationMessagesWrapper div.form, #INotificationMessagesWrapper label, #INotificationMessagesWrapper legend, #INotificationMessagesWrapper table, #INotificationMessagesWrapper caption, #INotificationMessagesWrapper tbody, #INotificationMessagesWrapper tfoot, #INotificationMessagesWrapper thead, #INotificationMessagesWrapper tr, #INotificationMessagesWrapper th, #INotificationMessagesWrapper td, #INotificationMessagesWrapper article, #INotificationMessagesWrapper aside, #INotificationMessagesWrapper canvas, #INotificationMessagesWrapper details, #INotificationMessagesWrapper figcaption, #INotificationMessagesWrapper figure, #INotificationMessagesWrapper footer, #INotificationMessagesWrapper header, #INotificationMessagesWrapper hgroup, #INotificationMessagesWrapper menu, #INotificationMessagesWrapper nav, #INotificationMessagesWrapper section, #INotificationMessagesWrapper summary, #INotificationMessagesWrapper time, #INotificationMessagesWrapper mark, #INotificationMessagesWrapper audio, #INotificationMessagesWrapper video, #INotificationMessagesWrapper button, #INotificationMessagesWrapper textarea, #INotificationMessagesWrapper input, #IntercomInboxActivatorExplainer, #IntercomInboxActivatorExplainer div, #IntercomInboxActivatorExplainer span, #IntercomInboxActivatorExplainer applet, #IntercomInboxActivatorExplainer object, #IntercomInboxActivatorExplainer iframe, #IntercomInboxActivatorExplainer h1, #IntercomInboxActivatorExplainer h2, #IntercomInboxActivatorExplainer h3, #IntercomInboxActivatorExplainer h4, #IntercomInboxActivatorExplainer h5, #IntercomInboxActivatorExplainer h6, #IntercomInboxActivatorExplainer p, #IntercomInboxActivatorExplainer blockquote, #IntercomInboxActivatorExplainer pre, #IntercomInboxActivatorExplainer a, #IntercomInboxActivatorExplainer abbr, #IntercomInboxActivatorExplainer acronym, #IntercomInboxActivatorExplainer address, #IntercomInboxActivatorExplainer big, #IntercomInboxActivatorExplainer cite, #IntercomInboxActivatorExplainer code, #IntercomInboxActivatorExplainer del, #IntercomInboxActivatorExplainer dfn, #IntercomInboxActivatorExplainer em, #IntercomInboxActivatorExplainer img, #IntercomInboxActivatorExplainer ins, #IntercomInboxActivatorExplainer kbd, #IntercomInboxActivatorExplainer q, #IntercomInboxActivatorExplainer s, #IntercomInboxActivatorExplainer samp, #IntercomInboxActivatorExplainer small, #IntercomInboxActivatorExplainer strike, #IntercomInboxActivatorExplainer strong, #IntercomInboxActivatorExplainer sub, #IntercomInboxActivatorExplainer sup, #IntercomInboxActivatorExplainer tt, #IntercomInboxActivatorExplainer var, #IntercomInboxActivatorExplainer b, #IntercomInboxActivatorExplainer u, #IntercomInboxActivatorExplainer i, #IntercomInboxActivatorExplainer center, #IntercomInboxActivatorExplainer dl, #IntercomInboxActivatorExplainer dt, #IntercomInboxActivatorExplainer dd, #IntercomInboxActivatorExplainer ol, #IntercomInboxActivatorExplainer ul, #IntercomInboxActivatorExplainer li, #IntercomInboxActivatorExplainer fieldset, #IntercomInboxActivatorExplainer form, #IntercomInboxActivatorExplainer div.form, #IntercomInboxActivatorExplainer label, #IntercomInboxActivatorExplainer legend, #IntercomInboxActivatorExplainer table, #IntercomInboxActivatorExplainer caption, #IntercomInboxActivatorExplainer tbody, #IntercomInboxActivatorExplainer tfoot, #IntercomInboxActivatorExplainer thead, #IntercomInboxActivatorExplainer tr, #IntercomInboxActivatorExplainer th, #IntercomInboxActivatorExplainer td, #IntercomInboxActivatorExplainer article, #IntercomInboxActivatorExplainer aside, #IntercomInboxActivatorExplainer canvas, #IntercomInboxActivatorExplainer details, #IntercomInboxActivatorExplainer figcaption, #IntercomInboxActivatorExplainer figure, #IntercomInboxActivatorExplainer footer, #IntercomInboxActivatorExplainer header, #IntercomInboxActivatorExplainer hgroup, #IntercomInboxActivatorExplainer menu, #IntercomInboxActivatorExplainer nav, #IntercomInboxActivatorExplainer section, #IntercomInboxActivatorExplainer summary, #IntercomInboxActivatorExplainer time, #IntercomInboxActivatorExplainer mark, #IntercomInboxActivatorExplainer audio, #IntercomInboxActivatorExplainer video, #IntercomInboxActivatorExplainer button, #IntercomInboxActivatorExplainer textarea, #IntercomInboxActivatorExplainer input {
+    font-family: $body-font-family;
+  }
+  #IModalOverlay {
+    background: rgba(255,255,255,.5);
+    opacity: 1!important;
+    @include clearfix;
+  }
+  #IModal {
+    margin-bottom: 0px!important;
+    top: 64px!important;
+    margin-top: 0px!important;
+    .ic_content {
+      #IntercomMessageListView {
+        .ic_table_wrapper {
+          table {
+            > tbody {
+              th, td {
+                border-bottom: 0px!important;
+                border-top: 1px solid $component-bg-color-hover;
+              }
+              tr {
+                &:hover {
+                  background:$component-bg-color-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ic_header {
+      height: auto;
+    }
+    border-color: $component-border-color;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    &.intercom {
+      div {
+        &.powered_by_intercom {
+          font-size: .875rem;
+          line-height: 20px;
+          display: block;
+          position: static!important;
+          width: auto;
+          height: 20px;
+          left: 1.875rem;
+          bottom: 2.5rem;
+          text-align: left;
+          font-family: inherit;
+          margin-top: 1.675rem;
+          display:none;
+        }
+      }
+    }
+    @include clearfix;
+    height: auto;
+    #IntercomMessageViewContainer {
+      .ic_messages_wrapper {
+        background-color: $component-bg-color;
+        padding: 0 1.875rem!important;
+        > ul {
+          &.ic_comments {
+            > li {
+              div {
+                &.ic_user {
+                  &:before, &:after {
+                    border-top-color: $component-bg-color-hover!important;
+                  }
+                }
+              }
+              &.ic_user_response {
+                > blockquote {
+                  background: $component-bg-color-hover;
+                  border-color: $component-bg-color-hover;
+                  color: $body-font-color;
+                }
+              }
+              > blockquote {
+                &:after {
+                  display:none!important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > div {
+      &.ic_content {
+        #IntercomMessageViewContainer {
+          .ic_textarea_has_focus {
+            .ic_message_container {
+              height:auto!important;
+            }
+            .ic_messages_wrapper {
+              height: auto!important;
+              max-height: 194px!important;
+            }
+          }
+          .ic_messages_wrapper {
+            border-color: $component-bg-color-hover;
+          }
+          background:#fff;
+          > #IntercomMessageView {
+            > form {
+              border: 0px!important;
+              padding: 0 1.875rem 1.875rem 1.875rem;
+              margin-top: 1.875rem;
+              @include clearfix;
+              background: $component-bg-color;
+              height: 100%;
+              > strong {
+                &.ic_attachment_chooser {
+                  right: 2.875rem!important;
+                  background: none!important;
+                  overflow: visible!important;
+                  &:after {
+                    font-family: 'icomoon';
+                    content: "\e000";
+                    position:absolute;
+                    top: 4px;
+                    color: $input-icon-color;
+                    right: 4px;
+                    font-size: 1rem;
+                  }
+                }
+              }
+              button {
+                position: static;
+                margin-top: 1rem;
+                float: right;
+                background: $primary-color;
+                border: 0px;
+                width: auto;
+                height: auto;
+                padding: .675rem 1rem;
+                @include single-transition(background);
+                &:hover, &:focus {
+                  background-color: $primary-color-darker;
+                }
+                span {
+                  border: 0px;
+                }
+                &#comment_commit {
+                  &:after {
+                    font-family: $body-font-family;
+                    //content: "\e01d";
+                    content: "Send";
+                    color: #fff;
+                    font-size: 1rem;
+                  }
+                  span {
+                    background: none;
+                    display: none;
+                  }
+                }
+              }
+              div {
+                &.ic_message_container {
+                  width: 100%;
+                  border: 0px;
+                  box-shadow: none;
+                  -webkit-box-shadow: none;
+                  height: auto!important;
+                  @include clearfix;
+                  > div {
+                    &.ic_attachments_container {
+                      height: auto;
+                      border-top: 0px!important;
+                      > div {
+                        &.ic_attachment {
+                          > strong {
+                            &.ic_attachments_label {
+                              position: relative;
+                              background: none !important;
+                              z-index: 1;
+                              &:after {
+                                font-family: 'icomoon';
+                                content: "\e000";
+                                position: absolute;
+                                top: 6px;
+                                right: 10px;
+                                color: $input-icon-color;
+                                z-index: 1;
+                              }
+                            }
+                            &.ic_remove_label {
+                              position: relative;
+                              background: none !important;
+                              z-index: 1;
+                              &:after {
+                                font-family: 'icomoon';
+                                content: "\e007";
+                                position: absolute;
+                                top: 7px;
+                                right: 10px;
+                                color: $input-icon-color;
+                                z-index: 1;
+                                font-size: .675rem;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  textarea {
+                    font-size: 1rem;
+                    font-family: $body-font-family!important;
+                    &:-moz-placeholder {
+                      color: $input-placeholder-color;
+                      font-family: $body-font-family!important;
+                      font-size: 1rem;
+                    }
+                    &::-moz-placeholder {
+                      color: $input-placeholder-color;
+                      font-family: $body-font-family!important;
+                      font-size: 1rem;
+                    }
+                    &:-ms-input-placeholder {
+                      color: $input-placeholder-color;
+                      font-family: $body-font-family!important;
+                      font-size: 1rem;
+                    }
+                    &::-webkit-input-placeholder {
+                      color: $input-placeholder-color;
+                      font-family: $body-font-family!important;
+                      font-size: 1rem;
+                    }
+                    @include single-transition(background);
+                    padding: 16px 56px 16px 16px;
+                    border: 1px solid $component-border-color;
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                    background: $input-sub-bg-color;
+                    @include radius($global-radius);
+                    height: 100%;
+                    &:focus, &.active {
+                      background: $component-bg-color-hover;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #IntercomNewMessageContainer {
+      background: #fff;
+      @include clearfix;
+      form {
+        padding: 0 1.875rem 1.875rem 1.875rem;
+        @include clearfix;
+        button {
+          position: static;
+          margin-top: 1rem;
+          float: right;
+          background: $primary-color;
+          border: 0px;
+          width: auto;
+          height: auto;
+          padding: .675rem 1rem;
+          @include single-transition(background);
+          &:hover, &:focus {
+            background-color: $primary-color-darker;
+          }
+          span {
+            border: 0px;
+          }
+          &#message_commit {
+            &:after {
+              font-family: $body-font-family;
+              //content: "\e01d";
+              content: "Send";
+              color: #fff;
+              font-size: 1rem;
+            }
+            span {
+              background: none;
+              display: none;
+            }
+          }
+        }
+      }
+      > div {
+        &.ic_form_wrapper {
+          > form {
+            > div {
+              &.ic_message_container {
+                width: 100%;
+                border: 0px;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                height: auto!important;
+                @include clearfix;
+                > div {
+                  &.ic_attachments_container {
+                    height: auto;
+                    border-top: 0px!important;
+                    > div {
+                      &.ic_attachment {
+                        > strong {
+                          &.ic_attachments_label {
+                            position: relative;
+                            background: none !important;
+                            z-index: 1;
+                            &:after {
+                              font-family: 'icomoon';
+                              content: "\e000";
+                              position: absolute;
+                              top: 6px;
+                              right: 10px;
+                              color: $input-icon-color;
+                              z-index: 1;
+                            }
+                          }
+                          &.ic_remove_label {
+                            position: relative;
+                            background: none !important;
+                            z-index: 1;
+                            &:after {
+                              font-family: 'icomoon';
+                              content: "\e007";
+                              position: absolute;
+                              top: 7px;
+                              right: 10px;
+                              color: $input-icon-color;
+                              z-index: 1;
+                              font-size: .675rem;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                textarea {
+                  font-size: 1rem;
+                  font-family: $body-font-family!important;
+                  &:-moz-placeholder {
+                    color: $input-placeholder-color;
+                    font-family: $body-font-family!important;
+                    font-size: 1rem;
+                  }
+                  &::-moz-placeholder {
+                    color: $input-placeholder-color;
+                    font-family: $body-font-family!important;
+                    font-size: 1rem;
+                  }
+                  &:-ms-input-placeholder {
+                    color: $input-placeholder-color;
+                    font-family: $body-font-family!important;
+                    font-size: 1rem;
+                  }
+                  &::-webkit-input-placeholder {
+                    color: $input-placeholder-color;
+                    font-family: $body-font-family!important;
+                    font-size: 1rem;
+                  }
+                  @include single-transition(background);
+                  padding: 16px 56px 16px 16px;
+                  border: 1px solid $component-border-color;
+                  box-shadow: none;
+                  -webkit-box-shadow: none;
+                  background: $input-sub-bg-color;
+                  @include radius($global-radius);
+                  height: 100%;
+                  &:focus, &.active {
+                    background: #fff;
+                  }
+                }
+              }
+            }
+            > strong {
+              &.ic_attachment_chooser {
+                right: 2.875rem!important;
+                background: none!important;
+                overflow: visible!important;
+                &:after {
+                  font-family: 'icomoon';
+                  content: "\e000";
+                  position:absolute;
+                  top: 4px;
+                  color: $input-icon-color;
+                  right: 4px;
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ic_header {
+      background: #fff;
+      border-bottom: 0px;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      a {
+        &.ic_back {
+          top: 2.5rem;
+          right: 3.875rem;
+          span {
+            background: none!important;
+            z-index: 1;
+            &:after {
+              font-family: 'icomoon';
+              content: "\e01a";
+              position: absolute;
+              top: 4px;
+              right: 4px;
+              color: $input-icon-color;
+              z-index: 1;
+            }
+          }
+        }
+        &.ic_close_modal {
+          top: 2.5rem;
+          right: 1.875rem;
+          span {
+            background: none!important;
+            z-index: 1;
+            &:after {
+              font-family: 'icomoon';
+              content: "\e007";
+              position: absolute;
+              top: 4px;
+              right: 4px;
+              color: $input-icon-color;
+              z-index: 0;
+            }
+          }
+        }
+        &.ic_new_message {
+          top: 2.5rem;
+          right: 3.875rem;
+          span {
+            background: none!important;
+            z-index: 1;
+            &:after {
+              font-family: 'icomoon';
+              content: "\e003";
+              position: absolute;
+              top: 4px;
+              right: 4px;
+              color: $input-icon-color;
+              z-index: 1;
+            }
+          }
+        }
+      }
+      > h1 {
+        position: static!important;
+        height: auto!important;
+        left: 0!important;
+        top: 0!important;
+        padding: 1.875rem!important;
+        text-align: left!important;
+        font-size: 1.5rem!important;
+      }
+      .ic_color_tab {
+        border-color: $primary-color;
+        background-color: $primary-color;
+        &:after {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 626px) {
+  body {
+    #IModal {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+      top: 0px !important;
+    }
+  }
+}

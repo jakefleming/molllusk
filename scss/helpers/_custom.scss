@@ -1,7 +1,7 @@
 /*Custom components*/
 .input-wrap {
   position: relative;
-  &.has-icon {
+  &.has-icon-right {
     input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
       padding-right: 2.5rem;
     }
@@ -9,7 +9,216 @@
       position: absolute;
       right: 1rem;
       line-height: 2.5rem;
-      opacity: .24;
+      color: $input-icon-color;
+      font-size: 1rem;
+      z-index:1;
     }
   }
+  &.has-icon-left {
+    input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+      padding-left: 2.5rem;
+    }
+    > [class*="icon-"] {
+      position: absolute;
+      left: 1rem;
+      line-height: 2.5rem;
+      color: $input-icon-color;
+      font-size: 1rem;
+      z-index: 1;
+    }
+  }
+}
+
+/*Side-nav styles*/
+
+.side-nav {
+  input[type="text"] {
+    &.has-icon {
+      padding-left: 48px;
+    }
+  }
+  li {
+    &.side-nav-li {
+      .label {
+        line-height: 1.25rem;
+        padding: 0 .5rem;
+        margin-top: .625rem!important;
+        margin-right: .625rem;
+        font-weight: 900;
+        float: right;
+        background-color: $primary-color;
+        font-size: .6875rem;
+      }
+      &.active, &.active:hover {
+        background: $primary-color;
+        a {
+          &.side-nav-link {
+            .side-nav-icon {
+              background: transparent;
+              color: #fff;
+            }
+            .side-nav-link-text {
+              color: #fff;
+            }
+          }
+        }
+      }
+      @include radius(4px);
+      &:hover {
+        background: $component-bg-color-hover;
+        @include transitionAll();
+        a {
+          &.side-nav-link {
+            .side-nav-link-text,.side-nav-icon {
+              color: $component-font-color;
+              @include transitionAll();
+            }
+            .side-nav-icon {
+              background: $component-bg-color-hover;
+            }
+          }
+        }
+      }
+      margin-bottom: 8px;
+      a {
+        &.side-nav-link {
+          padding: 0px;
+          display: block;
+          background: transparent;
+          &:hover {
+            background: transparent;
+          }
+          .side-nav-link-text {
+            position: relative;
+            top: -2px;
+            display: inline-block;
+            font-size: 16px;
+            color: $component-sub-font-color;
+            margin-left: .5rem;
+          }
+          .side-nav-icon {
+            line-height: 40px;
+            font-size: 16px;
+            background: $component-bg-color-hover;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            @include radius($global-radius);
+            color: $input-icon-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*custom panels*/
+
+.panel-appendage {
+  border-bottom: 1px solid $component-bg-color-hover;
+  padding: .5rem 1rem;
+  background: $component-bg-color;
+  .panel-subheader {
+    font-size: .875rem;
+    margin: 0px;
+    color: $body-font-color;
+    line-height: 1rem;
+  }
+}
+
+.custom-panel {
+  @include panel();
+  padding: 0px;
+  border: 0px;
+  margin-bottom: 1rem;
+  background: #fff;
+  &.bordered {
+    @include border;
+    border-color: $component-border-color;
+  }
+  .panel-body, .panel-top {
+    padding: 1rem;
+  }
+  .panel-body {
+    @include single-transition(background-color);
+    &.dark {
+      background: $component-bg-color-hover;
+    }
+    &.ghost {
+      background: transparent;
+    }
+    > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &:hover {
+    .panel-body {
+      background: $component-bg-color;
+    }
+  }
+  .panel-top {
+    @include clearfix;
+    border-bottom: 1px solid $component-bg-color-hover;
+    .panel-heading {
+      font-size: 1.25rem;
+      margin: 0px;
+      line-height: 1.5rem;
+      color: $body-font-color;
+    }
+    .panel-subheading {
+      font-size: .875rem;
+      margin: 0px;
+      color: $input-icon-color;
+      line-height: 1rem;
+      font-weight: lighter;
+    }
+  }
+  &.radius {
+    @include radius($global-radius);
+    .panel-top {
+      @include radius($global-radius $global-radius 0 0)
+    }
+    .panel-bottom, .panel-body:last-child {
+      @include radius(0 0 $global-radius $global-radius)
+    }
+  }
+}
+
+/*sorting*/
+
+.sort-control {
+  width: 1em;
+  height: 1em;
+  @extend .pointer;
+  @include transitionAll();
+  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .25s;
+  -webkit-transition-duration: .25s;
+  @include rotate90;
+  font-size: .75rem;
+  color: $input-icon-color;
+  &.down {
+    @include rotate270();
+  }
+}
+
+.tcol-sort {
+  @extend .pointer;
+}
+
+/*edit-icon*/
+
+.icon-utility-edit {
+  @include rotate90;
+}
+
+.edit-abs {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-left: .5rem;
+  margin-top: -.25rem;
 }
