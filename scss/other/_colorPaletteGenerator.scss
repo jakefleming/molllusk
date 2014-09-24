@@ -1,79 +1,6 @@
 /*Optimized for blue as primary (#2A94D6) Works with some other blues too / sf1 */
 
-
-
-
-$body-font-color: #2a4158;
-$primary-color-faded: #ced9e0;
-/*main*/
-$cp-1: #2A94D6;
-$cp-2: #fff;
-$cp-3: #F0F1F2;
-$cp-4: #34495E;
-/*notification*/ //203, 68%, 50%
-$cp-5: #43b66a;
-$cp-6: #c06057;
-$cp-7: #e6b739;
-$cp-8: #65cae4;
-/*secondary*/ //203, 68%, 50%
-$cp-9: #4EB1CB;
-$cp-10: #CF5C60;
-$cp-11: #717ECD;
-$cp-12: #4AB471;
-$cp-13: #F3AE4E;
-$cp-14: #D96383;
-/*tertiary*/
-$cp-15: #e1d951;
-$cp-16: #cfd05b;
-$cp-17: #c8ca58;
-$cp-18: #cfd05c;
-$cp-19: #bdd25f;
-$cp-20: #acd360;
-$cp-21: #9fdb66;
-$cp-22: #83c75e;
-$cp-23: #97cf5d;
-$cp-24: #89c059;
-$cp-25: #54c473;
-$cp-26: #4dca76;
-$cp-27: #38c393;
-$cp-28: #4fbe75;
-$cp-29: #6b9ee1;
-$cp-30: #7698f0;
-$cp-31: #3cc2b3;
-$cp-32: #50ceb9;
-$cp-33: #3abeb1;
-$cp-34: #48c7c8;
-$cp-35: #43b5b5;
-$cp-36: #53b6d7;
-$cp-37: #5ab0d2;
-$cp-38: #517e82;
-$cp-39: #439cba;
-$cp-40: #6b9ee2;
-$cp-41: #7f93f9;
-$cp-42: #6a89e5;
-$cp-43: #6488e3;
-$cp-44: #8a7aed;
-$cp-45: #8b85f9;
-$cp-46: #8c89f2;
-$cp-47: #8784ea;
-$cp-48: #d472d4;
-$cp-49: #b070e6;
-$cp-50: #e46fbe;
-$cp-51: #dc71d1;
-$cp-52: #df6184;
-$cp-53: #e56798;
-$cp-54: #eb687f;
-$cp-55: #e9637e;
-$cp-56: #ff7b84;
-$cp-57: #f77e75;
-$cp-58: #ecb46c;
-$cp-59: #f59f71;
-$cp-60: #d58a6a;
-$cp-61: #bf7b66;
-$cp-62: #904d4c;
-
-
-
+$primary-color: #2A94D6;
 $body-font-color: adjust-color($primary-color, $hue: 7, $saturation: -33, $lightness: -25);//210, 35%, 25% - #2a4158
 $primary-color-faded: adjust-color($primary-color, $saturation: -46, $lightness: 34 ); // 203, 22%, 84% - #ced9e0 - 203, 68%, 50%
 /*main*/
@@ -142,3 +69,75 @@ $cp-59: adjust-color($primary-color, $hue: -182, $saturation: 19, $lightness: 20
 $cp-60: adjust-color($primary-color, $hue: -185, $saturation: -12, $lightness: 13); //18, 56%, 63% - #d58a6a
 $cp-61: adjust-color($primary-color, $hue: -189, $saturation: -27, $lightness: 7); //14, 41%, 57% - #bf7b66
 $cp-62: adjust-color($primary-color, $hue: -202, $saturation: -37, $lightness: -7); //1, 31%, 43% - #904d4c
+
+
+//sf1
+$primary-color: #2A94D6;
+$body-font-color: #2a4158;
+$primary-color-faded: #ced9e0;
+/*main*/
+$cp-1: #2A94D6;
+$cp-2: #fff;
+$cp-3: #F0F1F2;
+$cp-4: #34495E;
+/*notification*/ //203, 68%, 50%
+$cp-5: #43b66a;
+$cp-6: #c06057;
+$cp-7: #e6b739;
+$cp-8: #65cae4;
+/*secondary*/ //203, 68%, 50%
+$cp-9: #4EB1CB;
+$cp-10: #CF5C60;
+$cp-11: #717ECD;
+$cp-12: #4AB471;
+$cp-13: #F3AE4E;
+$cp-14: #D96383;
+/*tertiary*/
+$cp-15: #e1d951;
+$cp-16: #cfd05b;
+$cp-17: #c8ca58;
+$cp-18: #cfd05c;
+$cp-19: #bdd25f;
+$cp-20: #acd360;
+$cp-21: #9fdb66;
+$cp-22: #83c75e;
+$cp-23: #97cf5d;
+$cp-24: #89c059;
+$cp-25: #54c473;
+$cp-26: #4dca76;
+$cp-27: #38c393;
+$cp-28: #4fbe75;
+$cp-29: #6b9ee1;
+$cp-30: #7698f0;
+$cp-31: #3cc2b3;
+$cp-32: #50ceb9;
+$cp-33: #3abeb1;
+$cp-34: #48c7c8;
+$cp-35: #43b5b5;
+$cp-36: #53b6d7;
+$cp-37: #5ab0d2;
+$cp-38: #517e82;
+$cp-39: #439cba;
+$cp-40: #6b9ee2;
+$cp-41: #7f93f9;
+$cp-42: #6a89e5;
+$cp-43: #6488e3;
+$cp-44: #8a7aed;
+$cp-45: #8b85f9;
+$cp-46: #8c89f2;
+$cp-47: #8784ea;
+$cp-48: #d472d4;
+$cp-49: #b070e6;
+$cp-50: #e46fbe;
+$cp-51: #dc71d1;
+$cp-52: #df6184;
+$cp-53: #e56798;
+$cp-54: #eb687f;
+$cp-55: #e9637e;
+$cp-56: #ff7b84;
+$cp-57: #f77e75;
+$cp-58: #ecb46c;
+$cp-59: #f59f71;
+$cp-60: #d58a6a;
+$cp-61: #bf7b66;
+$cp-62: #904d4c;

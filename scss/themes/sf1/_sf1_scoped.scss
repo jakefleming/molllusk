@@ -16,7 +16,7 @@ Leave everything in the order you see here, or you will have major problems budd
 @import "../../../bower_components/foundation/scss/foundation/components/panels";
 @import "../../../bower_components/foundation/scss/foundation/components/tooltips";
 
-.scope-it, .reveal-modal {
+body .scope-it, body {
   @import"../../../bower_components/foundation/scss/foundation/components/accordion";
   @import "../../../bower_components/foundation/scss/foundation/components/alert-boxes";
   @import "../../../bower_components/foundation/scss/foundation/components/block-grid";
